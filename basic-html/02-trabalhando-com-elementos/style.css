@@ -3,3 +3,23 @@ body{
     font-family: Fira Code;
     color: black;
 }
+
+code{
+    color: brown;
+}
+
+dt{
+    font-weight: bold;
+}
+
+dd{
+    background-color: gray;
+    padding: 5px 10px;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+ul{
+    list-style:none;
+}
