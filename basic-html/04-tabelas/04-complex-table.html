@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div>
+        <dl>
+            <dt>2 lojas</dt>
+            <dd>Quantos produtos foram produzidos, quantos vendidos e agrupado nome dos produtos.</dd>
+        </dl>
+    </div>
+    <br>
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <!-- Organizando conteúdos -->
+        <colgroup> <!-- Tag que agrupa as colunas -->
+            <col>
+            <col span="2" style="background-color: rgb(197, 119, 119)">
+            <col span="2" style="background-color: rgb(86, 159, 253);">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th> <!--rowspan: linhas-->
+                <th colspan="2" scope="colgroup">Afonso Pena</th> <!-- colspan: colunas-->
+                <th colspan="2" scope="colgroup">Antonio </th>
+            </tr>
+            
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th> <!-- Nome do produto / cabeçalho -->
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+</body>
