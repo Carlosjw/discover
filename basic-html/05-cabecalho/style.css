@@ -15,9 +15,9 @@ code{
     color: brown;
 }
 
-dt{
+/* dt{
     font-weight: bold;
-}
+} */
 
 dd{
     background-color: gray;
@@ -58,4 +58,8 @@ legend, fieldset{
     padding-left: 5px;
     padding-right: 5px;
     padding-block: 5px;
+}
+
+b{
+    color: black;
 }
