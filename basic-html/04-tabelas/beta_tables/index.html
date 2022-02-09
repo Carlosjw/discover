@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste Tabelas</title>
+</head>
+<body>
+    <h1>Testanto Tabelas</h1>
+    <div>
+        <dl>
+            <dt>Tentativa 01</dt>
+            <dd>-> Esta é uma tentativa de criação de tabelas</dd>
+            <dd>-> Provavelmente, não será a primeira tentativa :)</dd>
+        </dl>
+    </div>
+
+    <div>
+        <table>
+            <caption>Pessoas x Idade x Trabalho x Salário</caption>
+
+            <colgroup>   
+                <col span="3" style="background-color: white">
+                <col span="3" style="background-color: yellowgreen">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="3">Carlos Lima</th>
+                    <th colspan="3">Jociel Gregório</th>
+                </tr>
+
+                <tr>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                    <th scope="col">Salário</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                    <th scope="col">Salário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>34</td>
+                    <td>TI</td>
+                    <td>R$2.294,00</td>
+                    <td>24</td>
+                    <td>Analista</td>
+                    <td>R$1.700,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
