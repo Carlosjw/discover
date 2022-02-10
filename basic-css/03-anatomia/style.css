@@ -1,0 +1,10 @@
+body{
+    background-color: silver;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: purple;
+    font-size: 60px;
+    background: gray;
+}
