@@ -1,0 +1,12 @@
+body{
+    background-color: silver;
+    color: black;
+}
+
+h1{
+    border: 1px solid red;
+    /* margin -> Espaço emm volta */
+    margin: 20px; 
+    /* padding -> espaço interno */
+    padding: 60px;
+}
