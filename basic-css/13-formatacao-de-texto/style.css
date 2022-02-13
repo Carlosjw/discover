@@ -1,0 +1,10 @@
+body{
+    color: black;
+    background-color: rgb(110, 110, 110);
+    font-family: Fira Code;
+}
+
+p{
+    margin: 0 auto;
+    padding-left: 15px;
+}

@@ -14,8 +14,3 @@ A escolha do browser de qual regura aplicar, caso haja muitas regras para o mesm
 
 inline > tag style > tag link
 
-### Especificidade
-
-É um cálculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados.
-
-0. Universal selector, combinators e negation pseudo-class (:not())

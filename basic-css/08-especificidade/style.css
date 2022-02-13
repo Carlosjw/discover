@@ -1,0 +1,25 @@
+/* Especificidade: a espeficidade define a ordem na qual a aplicação dos estilos será aplicada, pois cada tipo de seletor tem uma força que determina a aplicaçao do estilo. Iss muda completamente o estilo cascata (de cima para baixo) pois há seletores de força diferentes */
+
+#my-title{ /* força 100 (cem) */
+    color: brown;
+}
+
+body{
+    background: silver;
+}
+
+.title{ /* força 10 */
+    color: red;
+}
+
+h1{ /* força 1 (um) */
+    color: blue;
+}
+
+h1.title#my-title{ /* forças 100 + 10 + 1 = 111*/
+    color: black;
+}
+
+*{ /* força 0 (zero) */
+    color: green;
+}
