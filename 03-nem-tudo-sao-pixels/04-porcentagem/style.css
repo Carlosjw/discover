@@ -1,0 +1,27 @@
+html{
+    font-size:50%;
+}
+body{
+    background-color: silver;
+    color: black;
+}
+
+p{
+    font-weight: bold;
+}
+
+li {
+    font-size: 80%;
+}
+
+#d01{
+    background-color: blue;
+    width: 50%; /* metade da largura do elemento pai*/
+    height: 100px;
+}
+
+#d02{
+    background-color: yellowgreen;
+    width: 100%; /* largura total do elemento pai */
+    height: 100px;
+}

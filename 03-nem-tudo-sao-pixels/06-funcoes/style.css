@@ -1,0 +1,11 @@
+body {
+    height: 100vh; /* 100% da viewport height*/
+}
+
+.box {
+    height: calc(50% + 20px); /*50% do body + 20px*/
+    width: 100%;
+    background-image: url(http://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: center;
+}
