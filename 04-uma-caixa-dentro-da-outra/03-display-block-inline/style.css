@@ -1,0 +1,27 @@
+body{
+    background-color: silver;
+}
+
+#dv01{
+    height: 100px;
+    border: 1px solid red;
+    width: 10px;
+    display: inline; /* Muda o comportamento naturaol da div para inline */
+
+}
+
+#dv02{
+    margin: 20px;
+}
+
+#sp01{ /* não respeita isso | não funciona */
+    height: 100px;
+    width: 10px;
+    border: 1px solid green;
+    display: block; /* Muda o comportamento natural do span para block */
+}
+
+#sp02{
+    margin: 100px;
+}
+
