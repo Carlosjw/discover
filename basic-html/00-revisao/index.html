@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Revisão de Contéudos</title>
+</head>
+<body>
+    <div class="indice-principal" style="background-color: azure">
+        <fieldset>
+            <legend style="text-align: left;">Índice</legend>
+            <ul id="indice">
+                <li><a href="#abreviacoes">01 &raquo; Abreviações</a></li>
+                <li><a href="#listas">02 &raquo; Listas</a>
+                    <ul>
+                        <li><a href="#ordenadas">02a &raquo; Ordenadas</a></li>
+                        <li><a href="#nao-ordenadas">02b &raquo; Não-Ordenadas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#citacoes">03 &raquo; Citações</a>
+                    <ul>
+                        <li><a href="#blockquote">03a &raquo; <code>&lt;blockquote&gt;</code></a></li>
+                        <li><a href="#cite">03b &raquo; <code>&lt;cite&gt;</code></a></li>
+                    </ul>
+                </li>
+                <li><a href="#div">04 &raquo; <code>&lt;div&gt;</code></a></li>
+                <li><a href="#span">05 &raquo; <code>&lt;span&gt;</code></a></li>
+            </ul>
+        </fieldset>
+    </div>  
+
+    <h1>Revisando todos os conteúdos HTML: Linguagem de Marcação de Texto</h1>
+
+    <h2 id="abreviacoes">01 &raquo; Abreviações -> abbr</h2>
+
+    <dl>
+        <dt><code>&lt;abbr&gt;</code></dt>
+        <dd>Usado para encapsular a descrição de uma abreviação.</dd>
+        <dd>Será exibida quando colocarmos o cursor do mouse sobre a sigla.</dd>
+        <dd>Ex: <abbr title="Hypertext Markup Language">HTML</abbr></dd>
+    </dl>
+    <br>
+
+    <a href="#indice">Índice</a>
+
+    <h2 id="listas">02 &raquo; Listas -> Ordenadas<code>(ol)</code> e Não-Ordenadas<code>(ul)</code></h2>
+    <h3 id="ordenadas">02a &raquo; Ordenadas</h3>
+
+    <dl>
+        <dt><code>&lt;ol&gt;</code></dt>
+        <dd>Usadas quando precisa-se organizar conteúdos, e a ordem <strong>é</strong> importante.</dd><br>
+        <dd>
+            <fieldset>
+                <legend>Exemplo</legend>
+                <ol>
+                    <li>Sou o primeiro item da lista.</li>
+                    <li>Sou o segundo item da lista.</li>
+                    <li>Sou o terceiro item da lista.</li>
+                </ol>
+            </fieldset>
+        </dd><br>
+        <dd><strong><em>Obs:</em></strong><em>O estilo identificador pode ser editado.</em></dd>
+    </dl>
+
+    <h3 id="nao-ordenadas">02b &raquo; Não-ordenadas</h3>
+
+    <dl>
+        <dt><code>&lt;ul&gt;</code></dt>
+        <dd>Usadas quando precisamos organizar conteúdos, mas a ordem <strong>não</strong> é importante.</dd>
+        <dd>
+            <fieldset>
+                <legend>Exemplo</legend>
+                <ul>
+                    <li>Eu sou um item qualquer</li>
+                    <li>Eu também sou um item qualquer</li>
+                    <li>Eu sou um outro item qualquer</li>
+                    <li>Eu também sou um item qualquer</li>
+                </ul>
+            </fieldset>
+        </dd><br>
+        <dd><strong><em>Obs:</em></strong><em>O estilo identificador pode ser editado.</em></dd>
+    </dl>
+
+    <a href="#indice">Índice</a><br>
+
+    <h2 id="citacoes">03 &raquo; Citações</h2>
+
+    <h3 id="blockquote">03a &raquo; <code>&lt;blockquote&gt;</code></h3>  
+        <dl>
+            <dt>O que faz:</dt>
+            <dd>
+                Indica que um texto externo foi citado.
+            </dd><br>
+            <fieldset>
+                <legend>Exemplo</legend>
+                <dd>
+                    <blockquote cite="https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/24/31#study=discover&v=24:31:3">
+                        <p>
+                            De longe Jeová apareceu a mim e disse:<br/>
+                            “Eu amo você com um amor eterno.<br/>
+                            Por isso eu a atraí a mim com amor leal".<br/>
+                            <cite><a href="https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/24/31#study=discover&v=24:31:3" title="Biblioteca Online da Torre de Vigia"><em>Jeremias 31:3</em></a></cite>
+                        </p>
+                    </blockquote>
+                </dd>
+            </fieldset><br/>
+            <dd><em><strong>Obs:</strong> adiciona um background à citação e a posiciona no centro da página.</em></dd>
+        </dl>      
+  
+    <h3 id="cite">03b &raquo; <code>&lt;cite&gt;</code></h3>
+
+    <dl>
+        <dt>O que faz:</dt>
+        <dd>Também indica que um texto externo foi citado, mas, diferente do <code>&lt;blockquote&gt;</code>, <em>não adiciona um background à referência ou posiciona o conteúdo no centro da página.</em></dd><br>
+        <fieldset>
+            <legend>Exemplo</legend>
+            <dd>
+                De longe Jeová apareceu a mim e disse:<br/>
+                “Eu amo você com um amor eterno.<br/>
+                Por isso eu a atraí a mim com amor leal".<br/>
+                <a href="https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/24/31#study=discover&v=24:31:3"><cite>Jeremias 31:3</cite></a>
+            </dd>
+        </fieldset><br>
+    </dl>
+
+    <h2 id="div">04 &raquo; Div</h2>
+    <dl>
+        <dt><code>&lt;div&gt;</code></dt>
+        <dd>
+            Serve para agrupar conteúdos. Trabalha com a ideia de blocos.
+        </dd>
+        <fieldset>
+            <legend>Exemplo</legend>
+            <dd>
+                Isso aqui abaixo é uma <code>&lt;div&gt;</code>. <br>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ad id nemo doloremque amet! Excepturi magnam fugiat unde quaerat, optio architecto vero harum nihil atque deleniti perspiciatis suscipit voluptatem provident.</p>
+                </div>
+            </dd>
+        </fieldset>
+    </dl>
+
+    <h2 id="span">03 &raquo; Span</h2>
+
+    <dl>
+        <dt><code>&lt;span&gt;</code></dt>
+        <dd>Serve para agrupar texto. Trabalha com uma ideia de linha.</dd><br>
+        <fieldset>
+            <legend>Exemplos</legend>
+            <dd>
+                Há 5 <code>&lt;spans&gt;</code> nessa linha de baixo: <br>
+                <spn>Isso</spn>
+                <spn>aqui</spn>
+                <spn>é</spn>
+                <spn>um</spn>
+                <spn><code>&lt;span&gt;</code></spn>
+                <br>
+                Há 3 <em>tags</em> <code>&lt;a&gt;</code> no <code>&lt;span&gt;</code> abaixo: <br>
+                <span>
+                    <a href="#">Link 01</a>
+                    <a href="#">Link 02</a>
+                    <a href="#">Link 03</a>
+                </span>
+            </dd>
+        </fieldset>        
+    </dl>
+
+    <footer>
+        <a href="#indice">Índice</a>
+    </footer>
+</body>
+</html>

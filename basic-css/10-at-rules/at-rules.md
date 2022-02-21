@@ -7,16 +7,17 @@
 
 ```css
 
-- @import       /* incluir um CSS externo */
+- @import ...;       /* incluir um CSS externo */
 
-- @media        /* regras condicionais para dispositivos */
+- @media... ;        /* regras condicionais para dispositivos */
 
-- @font-face    /* fontes externas */
+- @font-face... ;    /* fontes externas */
 
-- @keyframes    /* Animation */
+- @keyframes... ;    /* Animation */
+```
 
 ```css
-@import "http://local.com/style.css"
+@import "http://local.com/style.css";
 
 @media (min-width: 500px){
     /* rules here */

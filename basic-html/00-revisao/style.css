@@ -1,0 +1,48 @@
+body{
+    background-color: silver;
+    font-family: Fira Code;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    border-radius: 5px;
+    /* color: white; */
+    margin: 5px;
+    padding: 5px;
+    background-color: silver;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#indice{
+    list-style: none;
+}
+
+code{
+    color: red;
+    font-weight: bold;
+}
+
+fieldset:hover{
+    border-radius: 10px;
+    transition: 0.5s;
+    /* cursor:crosshair; */
+}
+
+legend{
+    text-align: center;
+}
+
+blockquote{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div{
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 10px;
+}
