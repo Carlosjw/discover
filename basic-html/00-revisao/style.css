@@ -46,3 +46,8 @@ div{
     padding: 10px;
     border-radius: 10px;
 }
+
+tr, th, td {
+    border: 1px solid black;
+    text-align: center;
+}

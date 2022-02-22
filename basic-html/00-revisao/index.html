@@ -15,6 +15,7 @@
                 <li><a href="#abreviacoes">01 &raquo; Abreviações</a></li>
                 <li><a href="#listas">02 &raquo; Listas</a>
                     <ul>
+
                         <li><a href="#ordenadas">02a &raquo; Ordenadas</a></li>
                         <li><a href="#nao-ordenadas">02b &raquo; Não-Ordenadas</a></li>
                     </ul>
@@ -192,7 +193,7 @@
                             </dl>
                         </dd>
                         <dt>03 &raquo; Tag <code>&lt;thead&gt;</code></dt>
-                        <dd>Recebe os cabeças da tabela. Nela ficam as tags:
+                        <dd>Recebe os cabeçalhos da tabela. Nela ficam as tags:
                             <dl>
                                 <dt><code>&lt;tr&gt;</code></dt>
                                 <dd>Cria as linhas da tabela.</dd>
@@ -202,13 +203,82 @@
                                 <dd>Cria as descrições/conteúdos das linhas da tabela.</dd>
                             </dl>
                         </dd>
+                        <dt>04 &raquo; Tag <code>&lt;tbody&gt;</code></dt>
+                        <dd>Recebe os conteúdos da tabela.</dd>
                     </dl>                
                 </dd>
-
-
-
             </dl>
         </dd>
+    </fieldset>
+    <fieldset>
+        <legend>Exemplo</legend>
+        <table>
+            <caption><abbr title="&lt;caption&gt;">Terapias do Saymon</abbr></caption>
+            <colgroup>
+                <col>
+                <col>
+                <col span="2" style="background-color: rgb(245, 191, 120);">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="2"><abbr title="&lt;th&gt;">Segunda</abbr> </th>
+                    <th colspan="2"><abbr title="&lt;th&gt;">Terça</abbr></th>
+                    <th colspan="2"><abbr title="&lt;th&gt;">Quarta</abbr> </th>
+                    <th colspan="2"><abbr title="&lt;th&gt;">Quinta</abbr> </th>
+                    <th colspan="2"><abbr title="&lt;th&gt;">Sexta</abbr></th>
+                </tr>
+                <tr>
+                    <th><abbr title="th">Terapeuta</abbr> </th>
+                    <th><abbr title="th">Horário</abbr></th>
+                    <th><abbr title="th">Terapeuta</abbr> </th>
+                    <th><abbr title="th">Horário</abbr></th>
+                    <th><abbr title="th">Terapeuta</abbr> </th>
+                    <th><abbr title="th">Horário</abbr></th>
+                    <th><abbr title="th">Terapeuta</abbr> </th>
+                    <th><abbr title="th">Horário</abbr></th>
+                    <th><abbr title="th">Terapeuta</abbr> </th>
+                    <th><abbr title="th">Horário</abbr></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><abbr title="&lt;td&gt;"></abbr> Fono</td>
+                    <td><abbr title="&lt;td&gt;">16:00</abbr></td>
+                    <td rowspan="4"><abbr title="&lt;td&gt;"></abbr> AT</td>
+                    <td rowspan="4"><abbr title="&lt;td&gt;">15:00</abbr></td>
+                    <td><abbr title="&lt;td&gt;"></abbr> Fono</td>
+                    <td><abbr title="&lt;td&gt;">16:00</abbr></td>
+                    <td rowspan="4"><abbr title="&lt;td&gt;"></abbr> AT</td>
+                    <td rowspan="4"><abbr title="&lt;td&gt;">15:00</abbr></td>
+                    <td><abbr title="&lt;td&gt;"></abbr> Fono</td>
+                    <td><abbr title="&lt;td&gt;">16:00</abbr></td>
+                </tr>
+                <tr>
+                    <td>TO</td>
+                    <td>17:00</td>
+                    <td>TO</td>
+                    <td>17:00</td>
+                    <td>TO</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td>Psicologa</td>
+                    <td>18:00</td>
+                    <td>Psicologa</td>
+                    <td>18:00</td>
+                    <td>Psicologa</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>PSPDG</td>
+                    <td>19:00</td>
+                    <td>PSPDG</td>
+                    <td>19:00</td>
+                    <td>PSPDG</td>
+                    <td>19:00</td>
+                </tr>
+            </tbody>
+        </table>
     </fieldset>
 
     <footer>
