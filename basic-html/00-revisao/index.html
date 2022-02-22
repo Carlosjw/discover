@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +28,7 @@
                 </li>
                 <li><a href="#div">04 &raquo; <code>&lt;div&gt;</code></a></li>
                 <li><a href="#span">05 &raquo; <code>&lt;span&gt;</code></a></li>
+                <li><a href="#tabelas">06 &raquo; Tabelas</a></li>
             </ul>
         </fieldset>
     </div>  
@@ -125,6 +126,7 @@
             </dd>
         </fieldset><br>
     </dl>
+    <a href="#indice">Índice</a>
 
     <h2 id="div">04 &raquo; Div</h2>
     <dl>
@@ -143,7 +145,7 @@
         </fieldset>
     </dl>
 
-    <h2 id="span">03 &raquo; Span</h2>
+    <h2 id="span">05 &raquo; Span</h2>
 
     <dl>
         <dt><code>&lt;span&gt;</code></dt>
@@ -156,7 +158,7 @@
                 <spn>aqui</spn>
                 <spn>é</spn>
                 <spn>um</spn>
-                <spn><code>&lt;span&gt;</code></spn>
+                <spn><code>&lt;span&gt;</code>.</spn>
                 <br>
                 Há 3 <em>tags</em> <code>&lt;a&gt;</code> no <code>&lt;span&gt;</code> abaixo: <br>
                 <span>
@@ -167,6 +169,47 @@
             </dd>
         </fieldset>        
     </dl>
+
+    <h2 id="tabelas">06 &raquo; Tabelas</h2>
+
+    <dl>
+        <dt><code>&lt;table&gt;</code></dt>
+    </dl>
+    <fieldset>
+        <legend>Atributos Principais</legend>
+        <dd>
+            <dl>
+                <dt>00 &raquo; <em>Tag </em><code>&lt;table&gt;</code></dt>
+                <dd><em>Tag</em> pai. Principal <em>tag</em> que indica que será criada uma tabela. Possui como filhas:
+                    <dl>
+                        <dt>01 &raquo; Tag <code>&lt;caption&gt;</code></dt>
+                        <dd>Identifica o objetivo da tabela.</dd>
+                        <dt>02 &raquo; Tag <code>&lt;colgroup&gt;</code></dt>
+                        <dd>Tag que agrupa as colunas. Possui a tag: 
+                            <dl>
+                                <dt><code>&lt;col span=""&gt;</code></dt>
+                                <dd>Indica a quantidade de colunas que serão mescladas.</dd>
+                            </dl>
+                        </dd>
+                        <dt>03 &raquo; Tag <code>&lt;thead&gt;</code></dt>
+                        <dd>Recebe os cabeças da tabela. Nela ficam as tags:
+                            <dl>
+                                <dt><code>&lt;tr&gt;</code></dt>
+                                <dd>Cria as linhas da tabela.</dd>
+                                <dt><code>&lt;th&gt;</code></dt>
+                                <dd>Cria os cabeçalhos das colunas.</dd>
+                                <dt><code>&lt;td&gt;</code></dt>
+                                <dd>Cria as descrições/conteúdos das linhas da tabela.</dd>
+                            </dl>
+                        </dd>
+                    </dl>                
+                </dd>
+
+
+
+            </dl>
+        </dd>
+    </fieldset>
 
     <footer>
         <a href="#indice">Índice</a>
