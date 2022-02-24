@@ -1,12 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: silver;
     color: black;
 }
 
-div{
+div, section{
     border: 1px solid red;
     width: 100px;
     height: 100px;
 
-    margin: 8px 0;
+    display: inline; /* coloca as divs lado a lado*/
+
+    margin: 0 2px;
+
+    /* margin: 0 16px; */
+    /* padding: 5px;     */
 }
+
+/* div{
+    margin-bottom: 8px;
+}
+
+section{
+    margin-top: 8px;
+} */

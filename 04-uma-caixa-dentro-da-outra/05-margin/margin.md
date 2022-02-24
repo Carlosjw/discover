@@ -2,7 +2,7 @@
 
 Espaços entre os elementos
 - margin-top | margin-right | margin-bottom | margin-left
-- values: `<length>` | `<percentage>` | auto
+- values: `<length>` | `<percentage>` | `auto`
 
 ```css
 div {
@@ -15,3 +15,6 @@ div {
 ```
 
     * Cuidado com margin collapsing (top se junto ao bottom)
+
+==> Quando um elemento está do lado do outro, eles fazem a soma do margin e não ocorre a junção das margens (margin collapsing)
+==> No margin collapsing o css pega o margin com maior valor.

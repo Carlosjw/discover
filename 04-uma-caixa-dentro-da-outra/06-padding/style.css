@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: silver;
+    color: black;
+}
+
+div, section{
+    border: 1px solid red;
+    padding: 10px 2em 8px 50%;
+    margin: 5px;
+}
+
