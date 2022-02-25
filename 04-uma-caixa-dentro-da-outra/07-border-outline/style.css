@@ -1,52 +1,30 @@
-* {
-    /* box-sizing:content-box; */
-    margin: 5px;
-    /* text-align: center; */
-}
+* { margin: 0;}
 
 body{
     background-color: silver;
-    color: black;
     font-family: Fira Code;
+    color: black;
     border: 1px solid green;
 }
 
-.table01, .table02{
-    background-color: blueviolet;
+div, section{
+    width: 100px;
+    height: 100px;
+    margin: 20% auto;
+
+    border: 10px red solid;
+    border-top: 4px dotted green;
+    border-bottom: 2px double blue;
+    border-left: 5px dashed orange;
+
+    outline: 5px solid purple;
+
+    box-sizing: border-box;
     padding: 5px;
 }
 
-.tables:hover{
-    border-radius: 10px;
-    border: 2px solid white;
-    transition: 0.5s;
-    /* color: rgb(233, 17, 17); */
-}
-
-/* table{
-    height: 98%;
-    width: auto;
-} */
-
-caption{
-    background-color: grey;
-    color: white;
+input{
     padding: 5px;
-    border-radius: 5px;
+    /* border-bottom: solid green 1px; */
+    margin: 5px;
 }
-
-.tables{
-    display: flex;
-    flex-direction: row;
-    border-top: red solid;
-    /* min-width: ; */
-}
-
-@media only screen and (max-width: 600px) {
-    .tables{
-        display: flex;
-        flex-direction: column;
-        border-top: red solid;
-        /* min-width: ; */ 
-    }
-  }

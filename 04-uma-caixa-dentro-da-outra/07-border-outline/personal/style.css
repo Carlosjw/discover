@@ -1,0 +1,58 @@
+* {
+    /* box-sizing:content-box; */
+    margin: 5px;
+    /* text-align: center; */
+}
+
+body{
+    background-color: silver;
+    color: black;
+    font-family: Fira Code;
+    border: 1px solid green;
+}
+
+.table01, .table02{
+    background-color: blueviolet;
+    padding: 5px;
+}
+
+.tables:hover{
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.5s;
+    /* color: rgb(233, 17, 17); */
+}
+
+/* table{
+    height: 98%;
+    width: auto;
+} */
+
+caption{
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tables{
+    display: flex;
+    flex-direction: row;
+    border-top: red solid;
+    /* min-width: ; */
+}
+
+#table-num01, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-radius: 5px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .tables{
+        display: flex;
+        flex-direction: column;
+        border-top: red solid;
+        /* min-width: ; */ 
+    }
+  }

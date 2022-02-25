@@ -26,4 +26,12 @@ div{
 }
 ```
 
-## E outline
+## E outline?
+
+- difere em 4 sentidos:
+  - Não modificará o tamanho da caixa, pois não é parte do Box Model
+  - Poderá ser diferente de retangular
+  - Não permite ajustes individuais
+  - Mais usada pelo user para acessibilidade
+
+**https://developer.mozilla.org/en-US/docs/Web/CSS/border**
