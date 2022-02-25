@@ -1,0 +1,14 @@
+body{
+    background-color: silver;
+    font-family: Fira Code;
+    color: black;
+}
+
+div{
+    color: blue;
+}
+
+p{
+    color: black;
+    text-align: justify;
+}
