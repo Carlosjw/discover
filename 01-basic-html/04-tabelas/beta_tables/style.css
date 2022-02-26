@@ -64,7 +64,9 @@ legend, fieldset{
     padding-block: 5px;
 }
 
-table{
+table, tr, th, td{
     text-align: center;
     /* padding: 5px; */
+    border: 1px solid black;
+    border-collapse: collapse;
 }
