@@ -1,0 +1,19 @@
+body{
+    background-color: silver;
+    font-family: Fira Code;
+    color: black;
+}
+
+div{
+    margin-top: 5px;
+    background-color: hsl(221, 40%, 50%, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table, tr, th, td{
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 4px;
+    text-align: center;
+}

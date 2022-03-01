@@ -22,7 +22,7 @@ Podemos definir os valores por:
 ```css
 element {
     /* Keyword values */
-    color: currentcolor;
+    color: currentcolor; /* cor atual */
 
     /* <named-color> values */
     color: red;

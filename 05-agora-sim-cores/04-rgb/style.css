@@ -1,0 +1,16 @@
+
+body{
+    background-color: silver;
+    color: black;
+    font-family: Fira Code;
+
+}
+    
+div{
+    color: #00F8;
+    padding: 5px;
+}
+
+h1{
+    color: rgb(255, 0, 0, 60%); /* ao colocarmos o 0(zero) estamos dizendo que queremos tirar essas cores */
+}

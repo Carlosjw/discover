@@ -1,0 +1,13 @@
+body{
+    background-color: silver;
+    color: black;
+    font-family: Fira Code;
+}
+
+div{
+    color: hsl(180, 100%, 50%, 20%);
+}
+
+h2{
+    color: inherit; /* Herdando cor do elemento anterior.*/
+}

@@ -25,9 +25,11 @@ table:hover{
 }
 
 td:hover{
+    background-color: black;
     color: white;
     font-weight: bold;
     cursor:auto;
+    border-radius: 5px;
 }
 
 /* th{
