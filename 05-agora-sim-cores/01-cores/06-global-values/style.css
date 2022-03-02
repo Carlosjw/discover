@@ -9,5 +9,6 @@ div{
 }
 
 h2{
-    color: inherit; /* Herdando cor do elemento anterior.*/
+    /* color: inherit; Herdando cor do elemento anterior. */
+    color: initial; /* Volta a cor inicial. Reseta cor para padrão */
 }
