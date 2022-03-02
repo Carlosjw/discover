@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    border: 7px dashed red;
+
+    background-color: aqua;
+}

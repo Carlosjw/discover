@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 300px;
+    border: 7px dashed red;
+
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png);
+    background-repeat: no-repeat;
+
+    /* Centralizando imagem */
+    background-position: center;
+
+    /* Mudando o tamanho da imagem */
+
+    /* Mantém a imagem do tamanho do conteiner */
+    background-size: contain;
+
+    /* Cobrindo todo o background com a imagem */
+    background-size: cover;
+
+    /* Porcentagem */
+    /* Somente na horizontal com vertical automática */
+    background-size: 50%;
+
+    /* Largura e altura  com porcentagem */
+    background-size: 50% 30%;
+
+    /* Valor em "em" */
+    background-size: 3em;
+
+    /* Valor em pixels */
+    background-size: 100px;
+}

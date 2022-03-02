@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+/* header{
+    height: 300px;
+    border: 7px dashed red;
+    padding: 16px;
+
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+
+} */
+
+main{
+    color: white;
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+
+    /* Mantendo o background-parado */
+    background-attachment: fixed; /* o valor padrão é scroll */
+}

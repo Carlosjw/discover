@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+main{
+    color: white;
+    padding: 8px;
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;    
+    background-attachment: fixed;
+
+    /* shorthand do background */
+    background: rgb(55, 100, 50) url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png) no-repeat right top / 50px border-box content-box fixed;
+}

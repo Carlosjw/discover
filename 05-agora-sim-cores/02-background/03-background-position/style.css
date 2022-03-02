@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+header{
+    height: 300px;
+    border: 7px dashed red;
+    background-color: aqua;
+    background-image: url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png);
+    background-repeat: no-repeat;
+
+    /* Mudando posição da imagem */
+    background-position: right center;
+
+    /* 
+        Quando colocamos somente uma propriedade no background-position, ela será aplicada tanto na vertical, quanto na horizontal.
+        A primera propriedade (right) é aplicada a posição horizontal e a segunda propriedade (center) é aplicada ao vertical.
+    */
+
+    /* Do topo para baixo */
+    background-position: right top;
+
+    /* De baixo pra cima */
+    background-position: right bottom;
+
+    /* Iniciando centralizado */
+    background-position: center bottom;
+}
