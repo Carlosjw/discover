@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 - Videos</title>
+</head>
+<body>
+  <!-- 
+    <video>
+
+    - src
+    - controls
+      - width: largura
+      - height: algura
+      - autoplay: executa o video automaticamente (depende do navegador)
+      - preload
+        - "auto": carrega o vídeo antes do usuário dar o play
+        - "metadata": carrega a duração do video, por exemplo
+        - "none": não carregar nada antes de aperta o botão
+      - loop: toca o video novamente após o final (depende do navegador)
+      - muted: inicia o vídeo mudo
+      - poster: define uma imagem antes do vídeo ser reproduzido
+    - se não funcionar?
+      - fallback content
+    - source
+      - src
+      - type
+
+    - sobre serviços de terceiros
+ -->
+  <video controls
+    poster="https://t.ctcdn.com.br/AJ6LO8oU_nw890pF2zvrFKgztJo=/512x288/smart/filters:format(webp)/i346442.jpeg"
+    width="400"
+  >
+    <source src="./media/teste.mp4" type="video/mp4">
+    <p>Este browser não suporta video, baixeo <a href="#">aqui</a></p>
+  </video>
+</body>
+</html>
+

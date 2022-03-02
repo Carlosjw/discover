@@ -1,0 +1,40 @@
+* {
+    margin: 5px;
+}
+
+div {
+    text-align: justify;
+}
+
+#p01{
+    background: linear-gradient(green, purple);
+    color: white;
+    padding: 5px;
+    border: 2px dashed white;
+}
+
+#p02{
+    background: radial-gradient(blue, yellow, green);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-clip: content-box;
+    /* padding-block: 2px; */
+    color: red;
+}
+
+#p02:hover{
+    border: 2px dashed yellow;
+    padding: 10px;
+    color: black;
+    transition: 0.5s;
+}
+
+#p03{
+    background: url(https://rukminim1.flixcart.com/image/416/416/jzsqky80/poster/j/h/g/medium-nature-wall-poster-blue-sky-poster-high-resolution-300-original-imafjqjumyeta4ej.jpeg?q=70) no-repeat right top content-box;
+    padding: 5px;
+    border: 3px solid purple;
+    color: black;
+
+}

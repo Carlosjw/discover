@@ -6,7 +6,7 @@ main{
     color: purple;
     padding: 8px;
     background-color: rgb(55, 100, 50);
-    background-image: url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -15,6 +15,12 @@ main{
     background-attachment: fixed;
 
     /* shorthand do background */
-    background: linear-gradient(red, yellow, green, black),
-    url(https://www.dinamize.com.br/wp-content/uploads/2020/08/google-imagens-icon2-min.png) no-repeat right top / 50px border-box content-box fixed;
+    background:  linear-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2)),
+    url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png) no-repeat right top / 50px border-box content-box fixed;
+}
+
+h1{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
 }
