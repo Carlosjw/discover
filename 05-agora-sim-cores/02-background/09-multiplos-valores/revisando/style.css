@@ -1,0 +1,19 @@
+*{margin: 5px;}
+
+main{
+    color: purple;
+    padding: 8px;
+
+    background-color: rgb(55, 100, 50);
+    background-image:url(./media/teste.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+
+    /* shorthand duplo background */
+    background: rgb(55, 100, 50) url(./media/teste.jpg) no-repeat right top / 50px border-box content-box fixed;
+
+}
