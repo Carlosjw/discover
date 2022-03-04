@@ -1,0 +1,34 @@
+div{
+    margin: 5px;
+    padding: 10px;    
+    text-align: justify;
+}
+
+p{
+    padding: 5px;
+}
+
+.div01{
+    border: 2px dashed green;
+    background-image: radial-gradient(purple, black, silver, green);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: content-box;    
+}
+
+.div02{
+    border: 2px dashed blue;
+    font-family: Fira Code;
+    background-image: url(https://www.programmerszone.ae/wp-content/uploads/2021/10/programming-evolution.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: center;
+    color: white;
+
+
+}

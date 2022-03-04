@@ -1,8 +1,9 @@
-*{margin: 5px;}
+*{margin: 0;}
 
 main{
     color: purple;
     padding: 8px;
+    border: 2px dashed orange;
 
     background-color: rgb(55, 100, 50);
     background-image:url(./media/teste.jpg);

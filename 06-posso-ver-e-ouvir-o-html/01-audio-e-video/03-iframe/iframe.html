@@ -9,18 +9,29 @@
             - width
             - title (acessibilidade)
             - allow: tras configurações específicas de onde estamos trazendo os     conteúdos
-            - allowfullscreen
+            - allowfullscreen: permite a tela cheia
             - frameborder
 
  -->
 
- <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/G-Cr00UYokU"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    title="Tutorial React Youtube">
-</iframe>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="youtube">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/G-Cr00UYokU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="Tutorial React Youtube">
+        </iframe>
+    </div>
+    <div id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.5294995951613!2d-49.08670619130136!3d-5.335814288230655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c3a1c55899bbfb%3A0x445de1c7ef7b101c!2sGolkar%20Acess%C3%B3rios!5e0!3m2!1spt-BR!2sbr!4v1646360986936!5m2!1spt-BR!2sbr" width="800" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
