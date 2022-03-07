@@ -1,0 +1,42 @@
+body{
+    background-color: silver;
+    color: black;
+}
+
+.box{
+    margin-bottom: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.box1{
+    background-color: red;
+    position: relative;
+    /* Relative: Aceita propriedades: top, right, bottom, z-index */
+    left: 100px; /* loja pra direita porque adiciona 100px à esquerda */
+    top: 80px; /* joga elemento pra baixo por adiciona 8px acima*/
+}
+.box2{
+    background-color: rgb(6, 97, 26);
+}
+.box3{
+    background-color: rgb(8, 9, 117);
+}
+
+.line{
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    padding: 10px;
+    color: white;
+}
+
+.lin1{
+    background-color: red;
+}
+.lin2{
+    background-color: rgb(6, 97, 26);
+}
+.lin3{
+    background-color: rgb(8, 9, 117);
+}

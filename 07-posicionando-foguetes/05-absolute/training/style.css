@@ -1,0 +1,35 @@
+.box{
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding-inline: 10px;
+    text-align: justify;
+}
+
+.box01{
+    background-color: rgb(205, 99, 50);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 445px;
+    margin-top: 0px;
+}
+
+.box02{
+    background-color: yellowgreen;
+    color: black;
+}
+
+.box03{
+    background-color: rgb(7, 80, 76);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 445px;
+}
+
+.box04{
+    background-color: rgb(69, 85, 10);
+    color: #ffff;
+}
+
