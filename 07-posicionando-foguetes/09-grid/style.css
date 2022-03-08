@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+
+    /* definindo areas */
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+
+    /* definindo linhas */
+    grid-template-rows: 30px 1fr 40px;
+    /* 1fr define que a segunda linha é flexível e vai preencher toda a área abaixo da header */
+
+    /* definindo colunas */
+    grid-template-columns: 1fr 80px;
+}
+
+header{
+    grid-area: header;
+    background-color: green;
+}
+
+main{
+    grid-area: main;
+    background-color: red;
+}
+
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: gray;
+}

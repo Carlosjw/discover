@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    
+    grid-template-rows: 30px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+
+    
+}
+
+header{
+    grid-area: header;
+    background-color: silver;   
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 0 8px;
+
+    align-items: center;
+}
+
+main{
+    grid-area: main;
+    border: 2px solid green;
+    padding: 8px;
+    margin: 5px;
+    background-image: url(https://source.unsplash.com/random);
+}
+
+aside{
+    grid-area: aside;
+    border: 2px solid green;
+    padding: 8px;
+    margin: 5px; 
+    background-image: url(https://source.unsplash.com/random);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    border: 2px solid green;
+    padding: 8px;
+    margin: 5px;
+
+    list-style-type: none;
+}
+
+footer{
+    grid-area: footer;
+    border: 2px solid green;
+    padding: 8px;
+    margin: 5px;
+    background-image: url(https://source.unsplash.com/random);
+
+}
