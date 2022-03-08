@@ -1,0 +1,31 @@
+.box{
+    width: 400px;
+    height: 100px;
+    padding-inline: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.box1{
+    background-color: purple;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+}
+.box2{
+    background-color: rgb(10, 209, 150);
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+}
+.box3{
+    background-color: rgb(58, 4, 4);
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 90px;
+}

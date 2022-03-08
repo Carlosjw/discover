@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column;  => organiza os elementos em uma coluna*/
+    /* justify-content: space-between; => adiciona um espaço entre os elementos */
+    justify-content: center; /* junta e centraliza os elementos */
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    /* margin-right: 8px;
+    margin-top: 8px; */
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
