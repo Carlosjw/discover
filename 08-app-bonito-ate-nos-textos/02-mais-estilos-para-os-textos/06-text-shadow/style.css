@@ -1,0 +1,17 @@
+p{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#p01{
+    text-decoration: wavy orange;
+    text-shadow: 1px 1px 8px red,
+    /* 2px 2px 1px green, */
+    2px 2px 1px rgb(13, 0, 128);
+}
+
+#p02{
+    text-shadow: 6px 1px 1px skyblue,
+    4px 2px 1px green;
+}

@@ -1,0 +1,66 @@
+#p01{
+    /* font-family: "Times New Roman", sans-serif; */
+    font-weight: bold;
+
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+
+    /* espaçamento entre as letras */
+    letter-spacing: 4px;
+    letter-spacing: 1em;
+
+    /* espaçamento entre as palavras */
+    word-spacing: 1em;
+
+    /* espaçamento entre linhas */
+    line-height: 1.6;
+
+    /* transformando o texto */
+
+    /* tudo maiúsculo */
+    text-transform: uppercase;
+
+    /* tudo minúsculo */
+    text-transform: lowercase;
+
+    /* iniciais maiúsculas */
+    text-transform: capitalize;
+
+    /* nenhuma transformaçao */
+    text-transform: none;
+
+    /* linha abaixo */
+    text-decoration: underline;
+
+    /* linha acima */
+    text-decoration: overline;
+
+    /* linha através do texto */
+    text-decoration: line-through;
+
+    /* mais de um */
+    text-decoration: line-through overline underline;
+
+    /* linha com ondulações na cor vermelha */
+    text-decoration: underline wavy red;
+}
+
+#p02{
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+    /* linha pontilhada abaixo na cor vermelha */
+    text-decoration: underline dotted red;
+
+}
+
+#p03{
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+    /* linha solida abaixo na cor azul */
+    text-decoration: underline solid blue;
+
+}
