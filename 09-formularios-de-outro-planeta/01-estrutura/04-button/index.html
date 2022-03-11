@@ -1,0 +1,75 @@
+<!-- 
+    <button>
+        - Representa um botão
+        - Usado para enviar formulários
+        - É estilizado pelo user agent (navegador)
+
+        Atributos comuns
+        - type
+            - submit: dentro de um formulário. Fará com que o formulário seja enviado.
+            - reset: limpa o formulário
+            - button
+        - autofocus: foca no campo/tag quando a página carregar
+        - disabled
+        - name
+        - value: define um valor padrão para o campo
+        - form: linca um botão a um formulário qualquer
+ -->
+
+ <!-- reset -->
+ <form action="">
+     <label for="">
+         Limpar:
+        <input type="text" placeholder="algum valor">
+     </label>
+     <button type="reset">Limpar</button>
+ </form>
+<br>
+
+<!-- autofocus -->
+ <form action="">
+        <label>
+            Autofocus:
+            <input type="text" placeholder="outro valor">
+        </label>
+     <button autofocus>Enviar</button>
+ </form>
+ <br>
+
+ <!-- disabled -->
+ <form action="">
+     <label for="">
+         Desabled:
+         <input type="text" disabled>
+     </label>
+     <button disabled="disabled">Enviar</button>
+ </form>
+
+ <!-- name e value: enviam um valor de um botão -->
+ <button type="submit" name="button" value="valor qualquer">Enviar</button>
+
+ <br>
+ <!-- form -->
+<form action="" id="personal-data" method="POST">
+    <fieldset>
+        <legend>Um formulário</legend>
+        <label for="name">
+            Nome:
+            <input type="text" id="name">
+        </label>
+        <label for="burn-date">
+            Nascimento:
+            <input type="date" id="burn-date">
+        </label>
+        <label for="email">
+            E-mail:
+            <input type="email" name="" id="email">
+        </label>
+    </fieldset>
+</form>
+<br>
+<!-- com button -->
+<button type="submit" form="personal-data">Enviar</button>
+
+<!-- com input type="submit" -->
+<input type="submit" form="personal-data" value="Enviar">
