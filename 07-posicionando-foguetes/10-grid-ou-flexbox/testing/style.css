@@ -40,6 +40,9 @@ main{
     padding: 8px;
     margin: 5px;
     background-image: url(https://source.unsplash.com/random);
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 aside{
@@ -48,6 +51,9 @@ aside{
     padding: 8px;
     margin: 5px; 
     background-image: url(https://source.unsplash.com/random);
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 a{
@@ -62,6 +68,9 @@ li{
 
     list-style-type: none;
     background-image: url(https://source.unsplash.com/random);
+    background-size: contain;
+    background-repeat: no-repeat;
+
 
 }
 
@@ -71,5 +80,7 @@ footer{
     padding: 8px;
     margin: 5px;
     background-image: url(https://source.unsplash.com/random);
+    background-size:cover;
+    background-repeat: no-repeat;
 
 }
