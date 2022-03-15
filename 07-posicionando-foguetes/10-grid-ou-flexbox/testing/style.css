@@ -10,7 +10,7 @@ body{
     
     grid-template-rows: 30px 1fr 100px;
     grid-template-columns: 1fr 200px;
-    background-color: purple;
+    background-color: silver;
 
 
     
@@ -40,7 +40,7 @@ main{
     padding: 8px;
     margin: 5px;
     background-image: url(https://source.unsplash.com/random);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -51,7 +51,7 @@ aside{
     padding: 8px;
     margin: 5px; 
     background-image: url(https://source.unsplash.com/random);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -68,7 +68,7 @@ li{
 
     list-style-type: none;
     background-image: url(https://source.unsplash.com/random);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
 

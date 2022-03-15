@@ -1,0 +1,38 @@
+<head>
+    <style>
+        body{
+            /* margin-top: 10px; */
+            background-color: rgb(87, 85, 85); 
+            color: white;
+            display: flex;
+            flex-direction: column;           
+        }
+        input{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        <input> atributos comuns
+
+        - autocomplete: faz o navegador sugerir completar com palavras que usamos com frequencia no nosso navegador.
+        - autofocus: foca em umc ampo quando a página for carregada.
+        - disabled: desabilita a função da tag alvo.
+     -->
+     <form action="" method="post">
+        <label for="text">
+            Tipo texto:
+            <input type="text" name="" id="text" placeholder="conteúdo diverso" disabled>
+        </label>
+    
+        <label for="email">
+            Email:
+            <input
+                type="email" 
+                id="email" 
+                autocomplete="email">
+        </label>
+        <button type="submit">Enviar</button>
+     </form>
+</body>

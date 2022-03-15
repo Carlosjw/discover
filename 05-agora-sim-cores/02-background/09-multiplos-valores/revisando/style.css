@@ -11,6 +11,7 @@ main{
     background-position: center;
     background-size: contain;
     background-origin: content-box;
+    background-origin: padding-box;
     background-clip: content-box;
     background-attachment: fixed;
 
