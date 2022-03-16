@@ -1,0 +1,124 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>input type email</title>
+    <style>
+        body{
+            margin: 5px;
+        }
+        fieldset{
+            /* margin: 5px; */
+            background-color: silver;
+            color: black;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 2px;
+        }
+        
+        legend{
+            background-color: silver;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 2px;
+        }
+
+        input{
+            /* background-color: silver; */
+
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 2px;
+        }
+        code{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend><code>&lt;input type="email"&gt;</code></legend>
+        <dl>
+            <dt>Descrição</dt>
+            <dd>- Espera que o usuário digite um email</dd>
+            <dd>- Irá validar se o valor digitado é um email</dd><br>
+    
+            <dt># Atributos</dt>
+            <dd>- placeholder</dd>
+            <dd>- readonly / disabled</dd><br>
+    
+            <dd>- required</dd>
+    
+            <dd>                
+                <dl>
+                    <dt>- multiple</dt>
+                    <dd>
+                        * campo irá receber 1 ou mais emails, separado por vírgulas
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>- minlength / maxlength</dt>
+                    <dd>* O mínimo e/ou máximo valor que o campo irá conter.</dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>- size</dt>
+                    <dd>* Valor numérico indicando quantos caracteres esse campo vai receber</dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>- pattern</dt>
+                    <dd>* Uso de expressão regular para validar o campo</dd>
+                    <dd>
+                        <dl>
+                            <dt>* exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br</dt>
+                            <dd>
+                                * <code>pattern=".+@rocketseat\.com\.br"</code>
+                            </dd><br>
+                            <dd>
+                                OBS: usar o <code>&lt;title&gt; </code> em conjunto com o <code>&lt;pattern&gt; </code> para exibir notifição ao usuário do tipo de padrão aceito.
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl>
+                    <dt>- list</dt>
+                    <dd>* o id de uma tag <code>&lt;datalist&gt;</code> que está no mesmo documento.</dd>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <code>&lt;datalist&gt;</code> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário quais valores estão disponíveis
+                            </dt>
+                            <dd>
+                                * Os valores do <code>&lt;datalist&gt;</code> que não forem compatíveis com o campo, não serão apresentados como sugestão.
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+    </fieldset><br>
+    <form action="">
+        <label for="email">Email: </label>
+        <datalist id="emailslist">
+            <option>mayk@rocketseat.com.br</option>
+            <option>carlos@gmail.com</option>
+            <option>carlos@yahoo.com.br</option>
+        </datalist>
+        <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            required
+            pattern=".+@rocketseat\.com\.br"
+            title="Somente emails @rocketseat.com.br serão aceitos"
+            list="emailslist">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
