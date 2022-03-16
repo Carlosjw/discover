@@ -39,14 +39,27 @@
     * off: desabilita a função de autocompletar
     * new-password: o navegador poderá sugerir uma nova senha
  -->
-
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>input</title>
+    <style>
+        body{
+            font-family: Fira Code;
+            color: black;
+            background-color: silver;
+        }
+        input{
+            margin-top: 5px;
+        }
+    </style>
+</head>
 <body>
     <form action="#">
         <input
+            type="password"
             id="senhaKey"
-           type="password"
-           autocomplete="new-password"
-        ><br>
+        >
            <label for="showPass">Senha: </label>
         <span id="showPass"></span><br>
         <button type="submit">Enviar</button>

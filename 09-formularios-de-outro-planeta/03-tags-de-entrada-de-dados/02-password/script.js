@@ -1,6 +1,6 @@
 let pass = document.getElementById("senhakey");
-let showPass = document.getElementById("showPass");
+let viewPass = document.getElementById("showPass");
 
 pass.oninput = function(event){
-    showPass.innerHTML = pass.value;
+    viewPass.innerHTML = pass.value;
 }
