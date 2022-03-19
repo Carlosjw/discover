@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>10 - Textarea</title>
+    <style>
+      body{
+        background-color: silver;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    <textarea>
+    - mais de uma linha
+    - útil para textos grandes
+
+    # Atributos
+    - id
+    - name: responsável por identificar os dados junto ao back-end
+    - rows e cols: quantidade de linhas e colunas
+    - maxlength e minlength: quantidade máxima e mínima de caracteres no campo
+    -wrap
+      - off: não quebra a linha após o final da área
+      - soft (padrão)
+      - hard
+    .. outros comuns aos <inputs>
+      - autocomplete, autofocus, disabled, placeholder, readonly, required
+   -->
+   <form id="teste" method="post">
+     <button type="submit" name="button">Enviar</button>
+   </form>
+      <label for="message">Mensagem</label>
+      <textarea
+        name="message"
+        rows="20"
+        cols="80"
+        id="message"
+        wrap="off"
+        placeholder="Está desabilitado tudo aqui"
+        form="teste" required></textarea>
+  </body>
+</html>

@@ -23,5 +23,5 @@ btnSomar.addEventListener('click', function(){
 })
 
 btnSubtrair.addEventListener('click', function(){
-    teste4.innerHTML = parseInt(number01.value) - parseInt(number02.value);
+    teste3.innerHTML = parseInt(number01.value) - parseInt(number02.value);
 })
