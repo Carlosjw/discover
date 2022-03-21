@@ -1,0 +1,73 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-areas:
+    "header header"
+    "main main"
+    ;
+
+    grid-template-rows: 50px 1fr;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(55, 110, 55);
+    align-content: center;
+}
+
+.navbar{
+  display: flex;
+}
+
+.btn{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+btn::after{
+  background-color: rgb(26, 72, 99);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(32, 137, 179);
+    display: grid;
+
+    grid-template-areas:
+    "products clients"
+    "money others"
+    ;
+}
+
+.products{
+    grid-area: products;
+}
+
+.clients{
+  grid-area: clients;
+}
+
+.money{
+  grid-area: money;
+}
+
+.others{
+  grid-area: other;
+}
+
+.products, .clients, .money, .others{
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(26, 72, 99);
+  height: 25vh;
+  width: 25vh;
+}

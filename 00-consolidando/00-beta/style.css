@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+
+    grid-template-columns: 1fr 100px;
+
+    grid-template-rows: 60px 1fr 100px;
+
+    background-image: url(https://source.unsplash.com/random);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* div{
+    border-radius: 5px;
+} */
+
+header, main, aside, footer{
+    margin: 5px;
+    border: 0.3px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: hsla(0, 0%, 77%, 0.45);
+    /* opacity: 0.3; */
+}
+
+header{
+    grid-area: header;
+}
+
+header:hover{
+    /* background-color: grey; */
+}
+
+main{
+    grid-area: main;
+
+    display: grid;
+    grid-template-areas:
+    "texts texts"
+    "forms tables"    
+    ;
+
+    grid-template-columns: 90vh;
+}
+
+main:hover{
+    /* background-color: bisque; */
+}
+/* 
+div{
+    padding: 5px;
+    margin: 10px;
+    padding: 20px;
+} */
+
+
+.texts{
+    grid-area: texts;
+    display: flex;
+    /* flex-direction: row; */
+    text-align: justify;
+    /* justify-content: flex; */
+    /* height: 100% */
+
+}
+
+p{
+    margin: 5px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.forms{
+    grid-area: forms;
+    display: flex;
+    /* justify-content: flex; */
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(200, 100%, 23%, 0.57);
+}
+
+div{
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.tables{
+    grid-area: tables;
+    justify-content: flex;
+    /* flex-direction: column; */
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
