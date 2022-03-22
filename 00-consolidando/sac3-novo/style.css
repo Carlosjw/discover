@@ -1,73 +1,114 @@
-*{box-sizing: border-box;}
+/* *{box-sizing: border-box;} */
 
 body{
-    margin: 0;
-    height: 100vh;
-
-    display: grid;
-
-    grid-template-areas:
-    "header header"
-    "main main"
-    ;
-
-    grid-template-rows: 50px 1fr;
+  background-color: hsl(202, 48%, 66%);
 }
 
+body{
+  margin: 0;
+  height: 100vh;
+}
 header{
-    grid-area: header;
-    background-color: rgb(55, 110, 55);
-    align-content: center;
-}
-
-.navbar{
-  display: flex;
-}
-
-.btn{
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-btn::after{
-  background-color: rgb(26, 72, 99);
+  background-color: hsl(142, 30%, 48%);
+  padding: 10px;
+  border: 1px solid white;
+  /* position: fixed; */
+  border-radius: 5px;
 }
 
 main{
-    grid-area: main;
-    background-color: rgb(32, 137, 179);
-    display: grid;
-
-    grid-template-areas:
-    "products clients"
-    "money others"
-    ;
+  margin: 5px;
+  /* display: flex;
+  flex-direction: row; */
 }
-
-.products{
-    grid-area: products;
-}
-
-.clients{
-  grid-area: clients;
-}
-
-.money{
-  grid-area: money;
-}
-
-.others{
-  grid-area: other;
-}
-
-.products, .clients, .money, .others{
+div{
   margin: 10px;
-  border-radius: 15px;
-  background-color: rgb(26, 72, 99);
-  height: 25vh;
-  width: 25vh;
+}
+
+span{
+  font-family: "Arial", sans-serif;
+}
+
+button{
+  border: none;
+  /* text-align: center; */
+  color: white;
+  font-weight: bold;
+  height: 150px;
+  width: 150px;
+  background-color: hsl(78, 67%, 42%);
+  border-radius: 20px;
+  /* margin: 10px; */
+  /* margin-right: 20px; */
+}
+a{
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Arial", sans-serif;
+  font-weight: bolder;
+  padding: 10px 16px 10px 16px;
+  /* border-radius: 5px; */
+}
+
+
+
+a:hover{
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  background-color: hsl(202, 48%, 31%);
+  transition: 0.5s;
+}
+
+.first{
+  display: flex;
+}
+#p01{
+  grid-area: p01;
+}
+
+#p02{
+  grid-area: p02;
+}
+
+#p03{
+  justify-content: center;
+  grid-area: p03;
+  display: flex;
+  flex-direction: column;
+}
+
+.botoes{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#p01, #p02, #p03{
+  text-align: center;
+  border: 1px solid white;
+}
+
+.number{
+  font-family: "Arial", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  color: hsl(78, 67%, 42%);
+  border: 1px solid white;
+}
+
+.products, .clients, .money, .others{  
+  /* display: flex; */
+  border: 1px solid white;
+  background-color: hsl(202, 48%, 31%);
+  border-radius: 20px;
+}
+
+.cifrao{
+  color: hsl(78, 67%, 42%);
+  align-items: center;
+  border: 1px solid white;
+  padding-block: 20px;  
 }
