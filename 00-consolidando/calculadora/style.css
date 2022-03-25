@@ -15,7 +15,7 @@ body {
 div.full-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 250px;
     height: 400px;
@@ -25,25 +25,34 @@ div.full-body {
 
 div.full-body .display-calc {
     margin-top: 50px;
-    width: 100vw;
-    height: 30px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px;
     border: 1px solid #504A55;
     background: #D5E2E4;
-
+    border-radius: 5px;
 }
 
 div.full-body .first-line button {
-    width: 40px;
+    width: 35px;
     height: 25px;
-    margin: 5px;
+    margin: 2px;
     border: none;
     border-radius: 5px;
+}
+
+div.full-body .numbers-calc {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
 }
 
 div.full-body .numbers-calc button {
     width: 40px;
     height: 25px;
-    margin: 5px;
+    margin: 2px;
     border: none;
     border-radius: 5px;
 }
