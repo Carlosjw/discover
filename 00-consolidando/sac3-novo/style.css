@@ -16,6 +16,12 @@ header{
   border-radius: 5px;
 }
 
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 main{
   margin: 5px;
   /* display: flex;
@@ -58,7 +64,7 @@ a:hover{
   color: white;
   border-right: 1px solid white;
   border-left: 1px solid white;
-  background-color: hsl(202, 48%, 31%);
+  background-color: hsla(202, 48%, 31%, 0,45);
   transition: 0.5s;
 }
 
