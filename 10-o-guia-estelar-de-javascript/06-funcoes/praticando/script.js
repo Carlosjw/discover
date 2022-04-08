@@ -1,10 +1,10 @@
 function calcCallBack(calc){
-    calc()
+    calc(2, 3)
 }
 
-let calc = (n1, n2) => {
-    n1 = 3
-    n2 = 9
-    console.log(n1 * n2 )   
-}
+calcCallBack(
+    function calc (n1, n2){
+        return 'Esta é a soma ' + n1 * n2
+    }
+)
 
