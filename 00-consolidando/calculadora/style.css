@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Logo';
+    src: url('fonts/KingLounpera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calculator';
+    src: url('fonts/Calculator.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -22,15 +36,71 @@ div.full-body {
     height: 350px;
     border: 1px solid #504A55;
     border-radius: 10px;
-    background: #514653;
+    background: #322B33;
     /* padding: 10px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 
 }
 
+div.full-body .head-content {
+    margin-top: 10px;
+    /* padding: 0 5px; */
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+/* div.full-body .head-content:last-child {
+    padding: 0;
+} */
+
+div.full-body .head-content .logo {
+    font-family: 'Logo';
+    font-size: 6px;
+    color: silver;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+div.full-body .head-content .solar-display {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #2C262D;
+    border-radius: 5px;
+    background: #463C31;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 1, 0.5);
+}
+
+div.full-body .head-content .solar-display .solar-block {
+    width: 33.6%;
+    height: 100%;
+    margin-left: 1px;
+    background: #2A241D;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 1, 0.5);
+
+}
+
+div.full-body .head-content .solar-display .block01 {
+    border-radius: 4px 0 0 4px;
+}
+
+div.full-body .head-content .solar-display .block03 {
+    border-radius: 0 4px 4px 0;
+}
+
+div.full-body .head-content .solar-display .solar-block:first-child{
+    margin-left: 0;
+}
+
 div.full-body .display {
-    /* padding: 5; */
-    margin-top: 30px;
+    font-family: 'Calculator';
+    padding: 5px;
+    margin-top: 5px;
     width: 95%;
     height: 70px;
     display: flex;
@@ -45,14 +115,39 @@ div.full-body .display {
 
 
 div.full-body .display .display-calc {
-    /* margin-top: 40px; */
-    /* margin-bottom: 10px; */
-    width: 80%;
+    width: 90%;
     height: 60px;
     border: 1px solid #504A55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #D5E2E4;
     border-radius: 5px;
     box-shadow: inset 2px 2px 3px 0, inset -2px 0px 0px -1px;
+}
+
+div.full-body .display .display-calc .signals {
+    width: 10%;
+    height: 100%;
+    margin-left: 2px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid yellow;
+}
+
+div.full-body .display .display-calc .numbers {
+    width: 90%;
+    height: 100%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    padding: 2px;
+    border: 1px solid green;   
+
 }
 
 div.full-body .first-line {
@@ -90,8 +185,9 @@ div.full-body .first-line button:first-child {
     margin-left: 0;
 }
 
-div.full-body .first-line button:hover {
+div.full-body .first-line button:active {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 1, 0.25);
+    /* font-weight: bold; */
     transition: 0.5s;
     border: 1px solid silver;
 }
@@ -106,7 +202,7 @@ div.full-body .first-line #off{
     font-weight: bold;
 }
 
-div.full-body .first-line #off:hover {
+div.full-body .first-line #off:active {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 1, 0.25);
     transition: 0.5s;
     border: 1px solid silver;
@@ -133,10 +229,11 @@ div.full-body .numbers-calc button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-div.full-body .numbers-calc button:hover {
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 1, 0.25);
+div.full-body .numbers-calc button:active {
+    /* font-weight: bold; */
     transition: 0.5s;
     border: 1px solid silver;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 1, 0.25);
 }
 
 /* div.full-body .numbers-calc button:first-child {
