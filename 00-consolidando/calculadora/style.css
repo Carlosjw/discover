@@ -138,16 +138,36 @@ div.full-body .display .display-calc .signals {
 }
 
 div.full-body .display .display-calc .numbers {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.full-body .display .display-calc .numbers .main-numbers{
+    width: 100%;
     height: 100%;
     font-size: 24px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 5px;
+    justify-content: center;
+    /* margin-left: 5px; */
     padding: 2px;
     border: 1px solid green;   
 
+}
+
+/* div.numbers {
+    border: 1px solid red;
+} */
+
+div.numbers .main-numbers span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 10px; */
+    margin-right: 0;
+    padding: 0;
+    /* border: 1px solid green; */
 }
 
 div.full-body .first-line {
