@@ -48,3 +48,10 @@ for(let n = 0; n <= 250; n++){
 
 console.log(`Pares: ${pares}.`)
 console.log(`Ímpares: ${impares}.`)
+
+// iterando em um array
+let names = ['Saymon', 'Solange', 'Carlos'];
+
+for(let i = 0; i < names.length; i++){
+    console.log(`Índice => ${i}, propriedade => ${names[i]}.`);
+}
