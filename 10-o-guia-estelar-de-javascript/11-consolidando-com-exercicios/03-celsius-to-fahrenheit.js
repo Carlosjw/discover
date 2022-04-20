@@ -11,6 +11,17 @@
 
 */
 
-function grauConvert(){
-    
+function degreeConvert(degree, degreeType){
+  let degreeChanged;
+  if(degreeType == "F"){
+    degreeChanged = degree * 9/5 + 32;
+  } else if(degreeType == "C"){
+    degreeChanged = (degree - 32) * 5/9
+  } else {
+    console.log("Tipo inválido")
+  }
+  
+  return degreeChanged;
 }
+
+degreeConvert(76, "F");
