@@ -14,6 +14,8 @@
 function degreeConvert(degree, degreeType){
   let degreeChanged;
   
+  degreeType = degreeType.toUpperCase();
+  
   if(degreeType == "C"){
     degreeChanged = degree * 9/5 + 32;
     degreeType = "F";
@@ -27,4 +29,4 @@ function degreeConvert(degree, degreeType){
   console.log(`${degreeChanged.toFixed(1)}°${degreeType}.`);
 }
 
-degreeConvert(76, "F");
+degreeConvert(76, "c");
