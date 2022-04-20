@@ -29,5 +29,9 @@ function convertNota(nota){
     console.log(`Nota => "${nota}"`);
 }
 
-convertNota(50);
+convertNota(59);
+convertNota(60);
+convertNota(70);
+convertNota(80);
+convertNota(90);
 
