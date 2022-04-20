@@ -12,6 +12,8 @@
      
 */
 
+// MINHA SOLUÇÃO
+
 function convertNota(nota){
 
     if(nota >= 90){
