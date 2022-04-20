@@ -13,15 +13,18 @@
 
 function degreeConvert(degree, degreeType){
   let degreeChanged;
-  if(degreeType == "F"){
+  
+  if(degreeType == "C"){
     degreeChanged = degree * 9/5 + 32;
-  } else if(degreeType == "C"){
+    degreeType = "F";
+  } else if(degreeType == "F"){
     degreeChanged = (degree - 32) * 5/9
+    degreeType = "C";
   } else {
     console.log("Tipo inválido")
   }
   
-  return degreeChanged;
+  console.log(`${degreeChanged.toFixed(1)}°${degreeType}.`);
 }
 
 degreeConvert(76, "F");
