@@ -29,4 +29,4 @@ function degreeConvert(degree, degreeType){
   console.log(`${degreeChanged.toFixed(1)}°${degreeType}.`);
 }
 
-degreeConvert(76, "c");
+degreeConvert(50, "f");
