@@ -59,3 +59,5 @@ const itProducts = [
     }
 
 ]
+
+console.log(itProducts.description)
