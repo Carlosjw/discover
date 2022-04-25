@@ -1,0 +1,25 @@
+<style>
+    h2 + p {
+        color: red;
+    }
+
+    button + button:hover{ /* aplicando estilo apenas no botão irmão */
+        margin-left: 32px;
+        padding: 10px;
+        transition: 0.5s;
+    }
+</style>
+
+<body>
+    <h1>04 - Sibling combinator</h1>
+
+    <h2>Título</h2>
+
+    <p>Este é um parágrafo</p> <!-- irmão direto de h2 -->
+
+    <p>Mais um parágrafo</p> <!-- não é irmão diretto de h2 -->
+
+    <!-- geralmente usado em... -->
+    <button>Um click</button>
+    <button>outro click</button> <!-- irmão direto do botão acima -->
+</body>

@@ -1,0 +1,11 @@
+ul li:first-child {
+    font-weight: bold;
+}
+
+div span:first-child {
+    color: blue;
+}
+
+div p:last-child{
+    color: green;
+}

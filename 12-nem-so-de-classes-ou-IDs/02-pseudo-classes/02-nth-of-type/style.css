@@ -1,0 +1,10 @@
+article p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 
+    nth-of-type()
+
+    Pega o exato elemento do tipo ao qual se referia. Sendo que o referido deve ser indicado entre parênteses.
+*/
