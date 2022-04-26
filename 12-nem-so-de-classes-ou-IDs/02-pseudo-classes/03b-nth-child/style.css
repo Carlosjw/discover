@@ -12,7 +12,16 @@ ul li:nth-child(even) { /* pares */
 }
 
 ul {
-    border: 1px solid red;
+    border: 1px solid green;
     list-style: none;
     padding: 15px;
+    text-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+ul li {
+    padding: 2px;
+    border: 1px solid green;
+    margin: 2px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
