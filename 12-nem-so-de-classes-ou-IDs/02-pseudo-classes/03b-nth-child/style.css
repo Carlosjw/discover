@@ -1,0 +1,12 @@
+/* body {
+    background: silver;
+} */
+
+ul li:nth-child(odd){ /* impares */
+    color: rgb(255, 255, 255);
+    background: grey;
+}
+
+ul li:nth-child(even) { /* pares */
+    color: yellow;
+}
