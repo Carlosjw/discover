@@ -10,3 +10,9 @@ ul li:nth-child(odd){ /* impares */
 ul li:nth-child(even) { /* pares */
     color: yellow;
 }
+
+ul {
+    border: 1px solid red;
+    list-style: none;
+    padding: 15px;
+}
