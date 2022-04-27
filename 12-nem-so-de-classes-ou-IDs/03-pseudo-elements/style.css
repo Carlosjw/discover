@@ -1,0 +1,46 @@
+li{
+    position: relative;
+}
+
+/* before: antes do conteúdo */
+li::before{
+    content: ""; /* uso obrigatório*/
+    width: 10px;
+    height: 1px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* after: depois do conteúdo */
+li::after{
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* first-line: primeira linha */
+p::first-line{
+    font-weight: bold;
+}
+
+/* first-letter: primeira letra */
+p::first-letter{
+    color: red;
+    font-size: 24px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+p::selection{
+    color: white;
+    background-color: purple;
+}
+
+p::cue {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+  }

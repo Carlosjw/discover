@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    background: silver;
+}
+
+div {
+    color: black;
+}
+
+ol :nth-child(3)::first-letter{
+    color: green;
+    font-size: 14px;
+    /* margin-bottom: -2px; */
+}
+
+div ol li {
+    /* font-weight: bold; */
+    text-shadow: 0 2px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+li:hover::after{
+    content: ' *__* e tô depois.';
+    color: green;
+}
+
+li:hover{
+    list-style: none;
+}
+
+li:hover::before {
+    content: '*_* tô antes do ';
+    color: blue;
+}
+
+li::selection{
+    color: white;
+    background: brown;
+}
