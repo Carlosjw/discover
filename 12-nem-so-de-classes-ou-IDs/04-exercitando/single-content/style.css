@@ -29,7 +29,10 @@ li:hover::after{
 }
 
 li:hover{
-    list-style: none;
+    width: 50%;
+    list-style:lower-greek;
+    background-color: purple;
+    color: #fff;
 }
 
 li:hover::before {
@@ -38,6 +41,8 @@ li:hover::before {
 }
 
 li::selection{
-    color: white;
-    background: brown;
+    color: green;
+    /* background: brown; */
+    text-decoration-style: wavy;
+    text-decoration: wavy;
 }
