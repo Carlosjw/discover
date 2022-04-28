@@ -5,136 +5,110 @@
 }
 
 body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    /* align-content: center; */
-    color: #f7f9f8;
-
-}
-
-label {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    margin-right: 5px;
-    text-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);
-}
-
-div {
-    /* border: 1px solid white; */
-}
-
-
-div.basic-form{
-    margin-top: 30px;
-    width: 500px;
-    height: 600px;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    background: #105030;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);
-    border: 2px solid #284038 ;
-    border-radius: 20px;
-}
-
-div.basic-form #form-basic {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    padding: 50px 10px 0 10px;
-    /* border: 1px solid white; */
-}
-
-div.basic-form #form-basic div {
-    margin-bottom: 10px;
-}
-
-div.basic-form #form-basic .basic-id{
-    width: 100%;
-    display: flex;
-}
-
-img{
-    width: 20px;
-    height: 20px;
-    margin-right: 2px;
-}
-
-input::placeholder{
-    font-size: 12px;
-}
-
-div.aditional-info {
-    width: 100%;
-    height: 30px;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; */
-    /* padding: 5px; */
-}
-
-div.comments {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-div.comments label {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 5px;
-}
-
-div.comments textarea{
-    width: 100%;
-    border-radius: 0 2px 3px 0;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);    
-}
-
-div.buttons{
-    /* margin-top: 10px; */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid white; */
-}
-
-div.buttons button{
-    width: 50%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: none;
-    border: none;
-    border-radius: 0px 5px 5px 0px;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
-div.buttons button:active{
-    box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.5);
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
-div.buttons :nth-child(1){
-    margin-right: 2px;
-    border-radius: 5px 0px 0px 5px;
+form {
+    margin-top: 30px;
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
-#send:hover{
-    color: #f7f9f8;
-    background: #60A8B8;
+input{
+    padding: 2px;
 }
 
-#clean:hover{
-    color: #f7f9f8;
-    background: #E85808;
+div.basic-id{
+    display: flex;
+    flex-direction: column;
+}
+
+div.basic-id .basic-id-head{
+    display: flex;
+    align-items: flex-start;
+}
+
+div.basci-id .basic-id-head label{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+div.aditional-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+div.aditional-info div {
+    width: 50%;
+}
+
+div.aditional-info .bird, .email {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.aditional-info .bird .bird-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3px
+}
+
+div.aditional-info .bird, .email .email-head{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3px;
+}
+
+div.comments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+div.comments textarea {
+    padding: 10px;
+}
+
+div.comments label{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+div.buttons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+div.buttons button {
+    width: 33%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.buttons button img{
+    margin-right: 5px;
 }

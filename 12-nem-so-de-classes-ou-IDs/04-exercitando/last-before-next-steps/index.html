@@ -8,30 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="basic-form">
-        <form action="#" method="post" id="form-basic">
-            <div class="basic-id">
+    <form action="#" method="post" id="form-basic">
+
+        <div class="basic-id">
+            <div class="basic-id-head">
                 <img src="images/add-user.svg" alt="user image">
                 <label for="name">Nome Completo</label>
-                <input type="text" id="name"placeholder="Digite seu nome completo aqui" required>
             </div>
-            <div class="aditional-info">
-                <img src="images/calendar.svg" alt="image calendar">
-                <label for="date-bird">Nascimento</label><br>
+            <input type="text" id="name"placeholder="Digite seu nome completo aqui" required>
+        </div>
+
+        <div class="aditional-info">
+            <div class="bird">
+                <div class="bird-head">
+                    <img src="images/calendar.svg" alt="image calendar">
+                    <label for="date-bird">Nascimento</label><br>
+                </div>
                 <input type="date" name="date-bird" id="date-bird">
-                <img src="images/email.svg" alt="image email">
-                <label for="email">E-mail</label>
+            </div>
+            <div class="email">
+                <div class="email-head">
+                    <img src="images/email.svg" alt="image email">
+                    <label for="email">E-mail</label>
+                </div>
                 <input type="email" name="email" id="email" placeholder="Digite seu email aqui">
             </div>
-            <div class="comments">
-                <label for="comments"><img src="images/info.svg" alt="image info"> Observações</label>
-                <textarea name="comments" id="comments" cols="30" rows="20"></textarea>
-            </div>
-            <div class="buttons">
-                <button type="submit" id="send"><img src="images/send.svg" alt="image send"> Cadastrar</button>
-                <button type="reset" id="clean"><img src="images/delete.svg" alt="image delete"> Limpar Campos</button>
-            </div>
-        </form>
-    </div>
+        </div>
+
+        <div class="comments">
+            <label for="comments"><img src="images/info.svg" alt="image info"> Observações</label>
+            <textarea name="comments" id="comments" cols="30" rows="20" placeholder="Outros comentários"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" id="send"><img src="images/send.svg" alt="image send"> Cadastrar</button>
+            <button type="reset" id="clean"><img src="images/delete.svg" alt="image delete"> Limpar Campos</button>
+        </div>
+    </form>
 </body>
 </html>
