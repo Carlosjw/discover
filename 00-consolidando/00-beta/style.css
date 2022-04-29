@@ -23,26 +23,21 @@ body{
     background-attachment: fixed;
 }
 
-/* div{
-    border-radius: 5px;
-} */
-
 header, main, aside, footer{
     margin: 5px;
     border: 0.3px solid white;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: hsla(0, 0%, 77%, 0.45);
-    /* opacity: 0.3; */
 }
 
 header{
     grid-area: header;
 }
 
-header:hover{
-    /* background-color: grey; */
-}
+/* header:hover{
+    background-color: grey;
+} */
 
 main{
     grid-area: main;
