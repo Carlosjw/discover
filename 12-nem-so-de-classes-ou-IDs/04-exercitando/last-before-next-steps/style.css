@@ -5,9 +5,12 @@
 }
 
 body{
+    width: auto;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -20,13 +23,33 @@ form {
     margin-top: 30px;
     width: 450px;
     height: 50%;
-    padding: 10px;
+    padding: 15px;
+    background: #088F4F;
+    border: 1px solid #008F38;
     border-radius: 10px;
-    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);;
+}
+
+form:hover{
+    box-shadow: 1px 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 input{
-    padding: 2px;
+    margin-top: 5px;
+    padding: 3px;
+    color: #185F3B;
+    outline: 0;
+    border: none;
+    border-radius: 3px;
+}
+
+input::placeholder{
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+input:hover{
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 div.basic-id{
@@ -85,6 +108,13 @@ div.comments {
 
 div.comments textarea {
     padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+div.comments textarea:hover{
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.5);    
 }
 
 div.comments label{
@@ -107,8 +137,34 @@ div.buttons button {
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#send:active{
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: #185F3B;
+    box-shadow: inset 1px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#clean:active{
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: #F92B2D;
+    box-shadow: inset 1px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 div.buttons button img{
     margin-right: 5px;
+}
+
+label{
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
