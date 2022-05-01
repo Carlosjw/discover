@@ -1,0 +1,23 @@
+<style>
+    .box{
+        display: flex;
+        flex-direction: column;
+        border: 1px dashed red;
+    }
+
+    .box div {
+        border: 1px solid;
+        flex-basis: 25px; /* impede que esta propriedade width (largura)seja alterada, caso não esteja em 'auto'. Caso o pai esteja com o flex-direction em 'column' ele não permitirá a alteração da altura, mas somente da largura */
+    }
+
+    .box div:nth-child(1){
+        width: 25px;
+    }
+</style>
+
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+</div>

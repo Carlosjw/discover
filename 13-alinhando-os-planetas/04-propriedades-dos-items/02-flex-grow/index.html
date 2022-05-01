@@ -1,0 +1,35 @@
+<style>
+    .box{
+        display: flex;
+        /* Para o flex-grow funcionar no flex-direction: column, precisamos definir um valor para o height (altura) para o pai, pois o eixo principal mudou da horizontal para a vertical */
+        flex-direction: column;
+        
+        border: 1px dashed red;
+        height: 150px;
+
+    }
+
+    .box div{
+        border: 1px solid;
+    }
+
+    .box div:nth-child(2), .box div:nth-child(3){
+        /* fazendo o 3th item ocupar todo o espaço vazio */
+        flex-grow: 1;
+        /* Padrões dos valores do flex-grow:
+            1 => pegue todo o espaço disponível
+            2 => pegue 2 terços do espaço
+        */
+    }
+
+    .box div:nth-child(1){
+        flex-grow: 2;
+    }
+</style>
+
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+</div>
