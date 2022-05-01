@@ -9,20 +9,48 @@
 
     aside {
         background: lightgreen;
+        flex: 1; /* 1 fração para o aside */
     }
 
     main{
         background: skyblue;
+        flex: 2; /* 2 frações para o main */
+
+        display: flex;
+        flex-direction: column;
     }
 
     main section:nth-child(1){
         background: lightyellow;
+        flex: 0 0 100px;
+
+               /* 
+            Through the code:
+                - 0 => não vai diminuir (flex-shrink);
+                - 0 => não vai se encaixar (flex-grow);
+                - 80px => fixa a altura (flex-basis);        
+        */
+
     }
     main section:nth-child(2){
         background: lightcoral;
+        flex: 0 120px;
+        /* 
+            Through the code:
+                - 0 => não se adapte
+                - 80px => fixa a altura (flex-basis: tem força maior sobre o flex do item 3)
+        
+        */
     }
     main section:nth-child(3){
         background: pink;
+        flex: 1 0;
+                /* 
+            Through the code:
+                - 1 => cresce por igual (flex-grow);
+                - 0 => sem flex-shrink
+        
+        */
     }
 
 
