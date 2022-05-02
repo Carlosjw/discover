@@ -1,0 +1,31 @@
+main{
+    display: flex;
+    width: auto;
+    height: 500px;
+    padding: 15px;
+    background: silver;
+    box-shadow: 13px 12px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    background: grey;
+    box-shadow: inset 13px 12px 10px 0 rgba(0, 0, 0, 0.5), 13px 12px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}
+
+main div:first-child{
+    margin-left: 0;
+}
+
+main .colum01{
+    flex: 1;
+}
+main .colum02{
+    flex: 3;
+}

@@ -1,0 +1,34 @@
+<style>
+    .box{
+        display: flex;
+        border: 1px dashed red;
+    }
+
+    .box div{
+        border: 1px solid;
+    }
+
+    .box div:nth-child(1){
+        order: 1;
+    }
+    .box div:nth-child(2){
+        order: 20;
+    }
+    .box div:nth-child(3){
+        order: 0;
+    }
+    .box div:nth-child(4){
+        order: -1;        
+    }
+    /* 
+        OBS:
+            Order não altera o HTML, mas somente o visual. Caso precisamos fazer algo para a acessibilidade, precisamos mexer diretamente no HTML.
+    */
+</style>
+
+<div class="box">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</div>

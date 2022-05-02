@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.navigation {
+    margin: 15px 10px;
+    padding: 5px;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 40px;
+}
+
+nav.navigation .logo img{
+    margin-top: -2.5px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: -2.5px;
+}
+
+nav.navigation ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav.navigation ul li{
+    margin: 0.8rem;
+}
+
+nav.navigation ul li:last-child button{
+    color: #fff;
+    background: blue;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
