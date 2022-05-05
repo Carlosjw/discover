@@ -11,7 +11,7 @@ main{
     background-position: center;
     background-size: contain;
     background-origin: content-box;
-    background-clip: content-box;    
+    background-clip: content-box;
     background-attachment: fixed;
 
     /* shorthand do background */

@@ -15,7 +15,7 @@ body{
 }
 
 .container:hover{
-    justify-content: space-between;
+    justify-content: space-evenly;
     transition: 0.5s;
     border: 2px solid white;
     padding: 5px;

@@ -12,7 +12,7 @@ header{
     /* Mudando posição da imagem */
     background-position: right center;
 
-    /* 
+    /*
         Quando colocamos somente uma propriedade no background-position, ela será aplicada tanto na vertical, quanto na horizontal.
         A primera propriedade (right) é aplicada a posição horizontal e a segunda propriedade (center) é aplicada ao vertical.
     */
