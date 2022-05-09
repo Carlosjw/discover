@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form">
+        <form action="#" id="single-form">
+             <img src="images/report.svg" alt="report icon" id="head-image">
+            <label for="name" id="name">NOME</label>
+            <div class="user-area">
+                <input type="text" name="name" id="name">
+                <img src="images/user.svg" alt="">
+            </div>
+            
+            <label for="pass" id="pass">SENHA</label>
+            <div class="pass-area">
+                <input type="password" name="pass" id="pass">
+                <img src="images/eye-closed.svg" alt="Olho fechado" id="eye-closed">
+            </div>
+            <span id="show-passed"></span>
+
+            <div class="buttons">
+                <button type="submit"><img src="images/send.svg" alt="Ícone Enviar"></button>
+
+                <button type="reset"><img src="images/reset.svg" alt="reload-icon"></button>
+            </div>
+            
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
