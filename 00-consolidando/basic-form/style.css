@@ -10,10 +10,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #A8A040;
+    /* background: #A8A040; */
 
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+}
+
+.around-form{
+    padding: 5px;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    box-shadow: inset 3px 3px 5px 2px rgba(0, 0, 0, 0.5), 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .form{
@@ -22,15 +29,15 @@ body{
     display: flex;
     /* flex-direction: column; */
     font-family: 'Arial', sans-serif;
-    color: #A8A040;
+    color: #ffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
     padding: 5px;
     border-radius: 10px;
-    background: #285838;
+    background: #688888;
     box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -64,7 +71,7 @@ body{
 
 #single-form .user-area img{
     height: 100%;
-    background: #105838;
+    background: #407060;
     border-radius: 5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -83,12 +90,12 @@ body{
 
 #single-form .pass-area img{
     border-radius: 5px;
-    background: #105838;
+    background: #407060;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #single-form .pass-area img:active{
-    background: #407060;
+    background: #105838;
 }
 
 input{
@@ -98,11 +105,16 @@ input{
     padding: 5px;
     text-align: center;
     background: #407060;
+    /* text-transform: uppercase; */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     outline: none;
     border: none;
     border-radius: 5px;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#pass{
+    text-transform: none;
 }
 
 label{
