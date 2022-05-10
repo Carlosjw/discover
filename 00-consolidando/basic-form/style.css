@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 body{
@@ -11,9 +14,6 @@ body{
     align-items: center;
     justify-content: center;
     background: silver;
-
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
 }
 
 .around-form{
@@ -81,6 +81,7 @@ body{
     height: 100%;
     background: #407060;
     border-radius: 5px;
+    outline: 1px solid #A8A040;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -101,11 +102,16 @@ body{
 #single-form .pass-area img{
     border-radius: 5px;
     background: #407060;
+    outline: 1px solid #A8A040;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #single-form .pass-area img:active{
     background: #105838;
+}
+
+#single-form .pass-area img:hover{
+    cursor: pointer;
 }
 
 input{
@@ -157,7 +163,7 @@ img{
     width: 50%;
     background: #A8A040;
     border: none;
-    outline: 1px solid #407060;;
+    /* outline: 1px solid #407060; */
     border-radius: 5px 0 0 5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
@@ -177,4 +183,8 @@ img{
     background: #407060;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
     outline: 1px solid #A8A040;
+}
+
+.buttons button:hover{
+    cursor: pointer;
 }

@@ -9,8 +9,10 @@ const headerID = document.querySelector('#header');
 console.log(headerID)
 
 // pegando o atributo com getAttibute
-
 console.log(headerID.getAttribute('id'));
 
 // removendo atributo
 header.removeAttribute('id');
+
+// adiconando classes
+header.setAttribute('class', 'bg header')
