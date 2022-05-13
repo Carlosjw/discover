@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+:root{
+    padding: 10px;
+}
+
+body{
+    margin-top: 2px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: silver;
+}
+
+header{
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: #A8A040;
+    border-radius: 15px;
+    outline: 1px solid #A8A040;
+    box-shadow: inset 1px 1px 6px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+header > h1{
+    z-index: 11;
+    width: 100%;
+    margin-top: -15px;
+    padding: 10px;
+    padding-left: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    background: #688888;
+    border-radius: 15px;
+    outline: 1px solid #A8A040;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+header .search{
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 20px 0 0 20px;
+}
+
+
+header .search #search{
+    flex: 4;
+    outline: none;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    background: silver;
+    outline: 1px solid #A8A040;
+    border-radius: 20px;
+    margin-right: 5px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+header .search #search:focus{
+    background: #C6D0D1;
+}
+
+header .search #search::placeholder{
+    font-weight: normal;
+    text-shadow: none;
+}
+
+header .search .buttons{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header .search .buttons button{
+    height: 100%;
+    flex: 1;
+    padding: 3px;
+    outline: none;
+    border: none;
+    background: silver;
+    cursor: pointer;
+    outline: 1px solid #A8A040;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+header .search .buttons button:active{
+    background: #C6D0D1;
+    box-shadow: inset 1px 1px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+header .search .buttons button:nth-child(2){
+    margin-left: 5px;
+    border-radius: 20px 0 0 20px;
+}
+
+header .search .buttons button:last-child{
+    flex: 3;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #688888;
+    border-radius: 0 20px 20px 0;
+}
+
+header .search .buttons button:last-child:active{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .search .buttons button:last-child span{
+    font-size: 12px;
+}
+
+header .search .buttons button:last-child span:last-child{
+    font-size: 16.5px;
+    font-weight: bold;
+}
+
+
+img{
+    width: 24px;
+    height: 24px;
+}
+
+main.main-content{
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    width: 100%;    
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    outline: 1px solid #A8A040;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+main.main-content .product-images{
+    flex: 1;
+    background: green;
+}
+
+main.main-content .product-images img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    
+}
+
+main.main-content .product-details{
+    flex: 5;
+    background: blueviolet;
+}
+
+main.main-content .product-images .image-add img{
+    width: 15px;
+    height: 15px;
+}
