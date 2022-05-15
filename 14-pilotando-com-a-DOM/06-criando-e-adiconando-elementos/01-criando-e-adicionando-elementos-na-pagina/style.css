@@ -1,0 +1,7 @@
+body div:first-child{
+    color: blue;
+}
+
+body p{
+    color: red;
+}
