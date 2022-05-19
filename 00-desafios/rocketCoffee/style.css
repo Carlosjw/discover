@@ -25,6 +25,7 @@
   }
 
   body{
+      /* position: relative; */
       width: 100vw;
       height: 100vh;
       display: flex;
@@ -32,23 +33,25 @@
   }
 
   header{
+      position: absolute;
+      top: 50px;
       width: 100%;
+      height: 80px;
       display: flex;
       align-items: center;
       justify-content: center;
   }
 
   header .navbar{
-      top: 50px;
-      height: 40px;
-      position: absolute;
+      /* top: 50px; */
+      height: 100%;
+      /* position: absolute; */
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
       padding: 5px;
-      /* border: 1px solid #fff; */
-
+      /* border-bottom: 1px solid #a8a8b3; */
   }
 
   header .navbar img{
@@ -57,28 +60,47 @@
       height: 50px;
   }
 
+  header .navbar img:hover{
+      margin-top: -15px;
+      transition: 1s;
+  }
+
   header .navbar ul{
       /* width: 100%; */
+      height: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       list-style: none;
       font-size: 14px;
       /* border: 1px solid #fff; */
   }
 
   header .navbar ul li{
-      width: 100%;
+      /* width: 100%; */
       height: 100%;
-      font-weight: 500;   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a8a8b3;
+      font-weight: 500;
+      padding: 10px 15px;
+      /* border: 1px solid #fff; */
 
-    padding: 10px 15px;
   }
 
   header .navbar ul li:hover{
-      border-bottom: 1px solid #8257E5;
-      color: #8257E5;
-      transition: 0.5s;
+    border-bottom: 2px solid #8257E5;
+    /* text-decoration:underline 2px #8257E5; */
+      
+      color: #FFF;
+      font-weight: 700;
+      /* transition: 0.5s; */
+      /* box-sizing:unset; */
+      /* background: rgba(168, 168, 179, 0.15); */
+      /* border-radius: 6px 6px 0 0px; */
+      /* box-shadow: inset 2px 3px 7px 0 rgba(0, 0, 0, 0.25); */
+
   }
 
 header .navbar button{
@@ -86,6 +108,7 @@ header .navbar button{
     height: 37px;
     color: #fff;
     font-size: 11px;
+    font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,27 +120,54 @@ header .navbar button{
 }
 
 header .navbar button:hover{
-    color: #8257E5;
+    background: #8257E5;
     transition: 0.5s;    
 }
 
 main{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid #fff; */
 }
 
-main span{
+main .content-text {
     position: absolute;
     top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+main .content-text span{
     font-size: 80px;
     font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
-main span:nth-child(2){
+main .content-text span:nth-child(2){
     color: #000;
     text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    transition: 0.5s;
 }
 
+main img{
+    top: 365px;
+    position: absolute;
+
+}
+
+main img:hover{
+    top: 350px;
+    transition: 1s;
+}
+
+main img::after{
+    content: '';
+    top: 380px;
+}
 
