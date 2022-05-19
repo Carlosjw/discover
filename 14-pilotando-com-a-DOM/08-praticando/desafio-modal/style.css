@@ -36,7 +36,7 @@ div.modal-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(107 114 128);
+    background-color: rgba(107, 114, 128, 0.5);
     visibility: hidden;
 
 }
@@ -46,8 +46,4 @@ div.modal-wrapper .purple-div{
     background: white;
     border-radius: 5px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-div.modal-wrapper .purple-div:active{
-    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.5);
 }

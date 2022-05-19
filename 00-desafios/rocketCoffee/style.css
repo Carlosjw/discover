@@ -1,0 +1,123 @@
+:root {
+    background: #000;
+    color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+  @font-face {
+      font-family: 'Manrope';
+      src: url(fonts/Manrope-VariableFont_wght.ttf) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Manrope';
+      box-sizing: border-box;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+      /* border: 1px solid #fff; */
+  }
+
+  body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+
+  header{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  header .navbar{
+      top: 50px;
+      height: 40px;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 5px;
+      /* border: 1px solid #fff; */
+
+  }
+
+  header .navbar img{
+      /* flex: 1; */
+      width: 43.06px;
+      height: 50px;
+  }
+
+  header .navbar ul{
+      /* width: 100%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      list-style: none;
+      font-size: 14px;
+      /* border: 1px solid #fff; */
+  }
+
+  header .navbar ul li{
+      width: 100%;
+      height: 100%;
+      font-weight: 500;   
+
+    padding: 10px 15px;
+  }
+
+  header .navbar ul li:hover{
+      border-bottom: 1px solid #8257E5;
+      color: #8257E5;
+      transition: 0.5s;
+  }
+
+header .navbar button{
+    width: 172px;
+    height: 37px;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 38px;
+    border-radius: 6px;
+    background: none;
+    border: 1px solid #8257E5;
+    gap: 10px;
+}
+
+header .navbar button:hover{
+    color: #8257E5;
+    transition: 0.5s;    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main span{
+    position: absolute;
+    top: 140px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+main span:nth-child(2){
+    color: #000;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+

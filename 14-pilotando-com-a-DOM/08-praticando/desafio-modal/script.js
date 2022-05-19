@@ -1,19 +1,21 @@
 const btn = document.querySelector('#openModal');
 const modalWrapper = document.querySelector('.modal-wrapper');
-const body = document.querySelector('body');
 const purpleDiv = document.querySelector('#purple-div');
 
 btn.addEventListener('click', function(){
     modalWrapper.style.visibility = 'visible';
 });
 
-purpleDiv.addEventListener('click', function(){
-  modalWrapper.style.visibility = 'hidden';
-});
+// dica hora de codar
+document.onkeydown = function(event){
+    // Mayk Brito
+    const isEscKey = event.key === 'Escape';
 
-body.KeyboardEvent('keyup', function(){
-    if(purpleDiv.value == 'Escape'){
+    if(isEscKey){
         modalWrapper.style.visibility = 'hidden';
+        console.log(event.key);
     }
-})
+}
+
+
 
