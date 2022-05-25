@@ -39,6 +39,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: #290742;
+    border-bottom: 5px solid #4fff4b;
 }
 
 header:hover{
