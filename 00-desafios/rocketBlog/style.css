@@ -41,6 +41,10 @@ header{
     background: #290742;
 }
 
+header:hover{
+    box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
 .nav-bar {
     flex: 1;
     width: 100%;
