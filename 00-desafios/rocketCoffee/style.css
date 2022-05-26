@@ -1,6 +1,6 @@
 :root {
-    background: #000;
-    color: #FFF;
+    --background: #000;
+    --text-color: #FFF;
     --button: #8257E5;
     --border: #29292E;
     --border-menu-mobile: #A8A8B3;
@@ -21,274 +21,40 @@
       box-sizing: border-box;
       text-rendering: optimizeLegibility !important;
       -webkit-font-smoothing: antialiased !important;
-      /* border: 1px solid #fff; */
+  }
+
+  :root{
+    background: var(--background);
   }
 
   body{
       width: 100vw;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background: url(assets/blur-1.png) no-repeat left bottom content-box, url(assets/blur-2.png) no-repeat right top content-box;
+      color: var(--text-color);
+      background: url(assets/blur-1.png) no-repeat left bottom, url(assets/blur-2.png) no-repeat right top;
   }
 
   header{
-      position: absolute;
-      top: 50px;
-      width: 100%;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
   }
 
-  header .navbar{
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding: 5px;
+  .mobile-menu{
+      display: none;
   }
 
-  header .navbar #desktop-logo{
-      width: 43.06px;
-      height: 50px;
-  }
-
-  header .navbar #desktop-logo:hover{
-    animation: float 2s ease-in-out infinite;
-  }
-
-  header .navbar #mobile-logo{
-      visibility: hidden;
-  }
-
-  header .navbar ul{
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      list-style: none;
-      font-size: 14px;
-      /* border: 1px solid blue; */
-  }
-
-  header .navbar ul li{
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #a8a8b3;
-      font-weight: 500;
-      padding: 10px 15px;
-      /* border: 1px solid green; */
-  }
-
-  header .navbar ul li:hover{
-    cursor: pointer;
-    border-bottom: 2px solid #8257E5;      
-    color: #FFF;
-    font-weight: 700;
-  }
-
-header .navbar button{
-    width: 172px;
-    height: 37px;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 11px 38px;
-    border-radius: 6px;
-    background: none;
-    border: 1px solid #8257E5;
-    gap: 10px;
-}
-
-header .navbar button:hover{
-    cursor: pointer;
-    background: #8257E5;
-    transition: 0.5s;    
-}
-
-header .navbar #menu-icon{
-    visibility: hidden;
-}
-
-header .navbar #menu-icon:hover{
-    cursor: pointer;
-}
-
-main{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;   
-    /* border: 1px solid yellow; */
+  @media only screen and (max-width: 843px){
+     
+      body{
+          background: url(assets/blur-mobile.png) ;
+          background-size: cover;
+          transition: 0.4s;
+      }
 
 }
-
-main .content-text {
-    width: 75%;
-    position: absolute;
-    top: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-    /* border: 1px solid skyblue; */
-}
-
-main .content-text span{
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-}
-
-main .content-text span:nth-child(2){
-    color: #000;
-    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-    transition: 0.5s;
-}
-
-main .content-text p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    visibility: hidden;
-}
-
-main button{
-    width: 174.12px;
-    height: 37px;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 11px 38px; */
-    border-radius: 6px;
-    background: none;
-    border: 1px solid #8257E5;
-    /* gap: 10px; */
-    visibility: hidden;
-
-}
-
-main button:hover{
-    cursor: pointer;
-    position: absolute;
-    background: #8257E5;
-    transition: 0.5s; 
-}
-
-main button img{
-    margin-left: 15px;
-    /* border: 1px solid white; */
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-
-	50% {
-		transform: translatey(-20px);
-	}
-
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-#coffee-cup{
-    top: 203px;
-    position: relative;
-    /* width: 60%; */
-    /* flex-shrink: 0; */
-    /* border: 1px solid white; */
-}
-
-#coffee-cup:hover {
-    animation: float 2s ease-in-out infinite;
-}
-
-@media only screen and (max-width: 843px) {
-    :root{
-        width: 100vw;
-        height: 100vh;
-    }
-
-    *{
-        border: 1px solid #fff;
-    }
-
-    body{
-        width: 100%;
-        background: url(assets/blur-mobile.png) no-repeat center bottom cover;
-    }
-
-    header .navbar #desktop-logo{
-        width: 0%;
-        visibility: hidden;
-    }
-
-    header .navbar #mobile-logo{
-        margin: 0;
-        visibility: visible;
-    }
-
-    header .navbar button{
-        width: 0%;
-        height: 0%;
-        visibility: hidden;
-    }
-
-    header .navbar #menu-icon{
-        visibility: visible;
-    }
-
-    header .navbar #navigation{
-        width: 0%;
-        height: 0%;
-        visibility: hidden;
-    }
-
-    main .content-text {
-        padding: 20px;
-        width: 50%;
-        height: 25%;
-    }
-
-    main .content-text span{
-        width: 0%;
-        height: 0%;
-        visibility: hidden;
-        transition: 0.5s;
-    }
-
-    main .content-text p {
-      visibility: visible;
-      position: absolute;
-      transition: 0.5s;
-    }
-
-    main button{
-        top: 330px;
-        position: absolute;
-        visibility: visible;
-    }
-
-    #coffee-cup{
-        top: 280px;
-        width: 80%;
-    }
-  }
-
 

@@ -9,9 +9,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <img src="assets/logo-desktop.svg" alt="logo foguete" id="desktop-logo">
-            <img src="assets/logo-mobile.svg" alt="logo foguete mobile" id="mobile-logo">
+        <img src="assets/logo-desktop.svg" alt="logo foguete" id="desktop-logo">
+        <img src="assets/logo-mobile.svg" alt="logo foguete mobile" id="mobile-logo" hidden>
+
+        <nav class="desktop-menu">
+
             <ul id="navigation">
                 <li>Home</li>
                 <li>Menu</li>
@@ -20,9 +22,18 @@
                 <li>Lojas</li>
             </ul>
             <button>PEGAR MEU CAFÉ</button>
-            <img src="assets/menu-buguer-open.svg" alt="ícone menu" id="menu-icon">
         </nav>
+
     </header>
+
+    <nav class="mobile-menu">
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Recompensas</li>
+        <li>GiftCards</li>
+        <li>Lojas</li>
+    </nav>
+
     <main>
         <div class="content-text">
             <span>Great Coffee</span>
@@ -34,6 +45,7 @@
         <button>PEGAR MEU CAFÉ <img src="assets/arrow.svg" alt=""></button>
         <img src="assets/rocket-coffee.png" alt="coffee cup" id="coffee-cup">
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
