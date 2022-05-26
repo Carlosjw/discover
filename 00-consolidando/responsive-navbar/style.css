@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira sans', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .container{
@@ -22,10 +22,6 @@
 
 }
 
-.menu{
-    display: none;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -33,4 +29,106 @@ nav {
     right: 0;
     z-index: 99;
     background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--primary);
+}
+
+h1{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: var(--light);
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+/* animando menu */
+.hamburger:hover span:nth-child(2){
+    transform: translateX(10px); /* movendo 10px para direita */
+    background: var(--primary);
+}
+
+/* inclinando primeiro span */
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+/* ocultando segundo span */
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+/* inclinando terceiro span */
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);    
+}
+
+.hamburger.is-active:hover span{
+    background-color: var(--primary);
+}
+
+.menu{
+    display: none;  /* ocultando menu */
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+}
+
+/* adicionando background aos itens do menu */
+.menu a.is-active, .menu a:hover{
+    background-color: var(--primary);
+}
+
+/* personalizando itens do menu */
+.menu a{
+    color: #fff;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+/* exibindo menu */
+@media (min-width: 768px){
+    /* ocultando spans/toggles */
+    .hamburger{
+        display: none;
+    }
+
+    /* exibindo menu */
+    .menu{
+        display: flex;
+    }
 }
