@@ -1,0 +1,14 @@
+{
+  "name": "08-criando-e-rodando-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cfonts": "^3.1.0"
+  }
+}
