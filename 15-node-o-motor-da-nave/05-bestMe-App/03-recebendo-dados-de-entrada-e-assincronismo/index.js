@@ -15,8 +15,10 @@ const ask = (index = 0) => {
 
 ask()
 
-// on() é alguma coisa que fica ouvindo eventos. O "data" é isso que fica ouvindo e rodando uma função
+// on() é alguma coisa que fica ouvindo eventos. O "data" é isso que fica acontecendo quando é inserido dados no processo.
 process.stdin.on("data", data => {
     process.stdout.write(data.toString().trim() + "\n");
-    // trim() remove os espaços em branco
+    // trim() remove os espaços vazios no começo e no fim.
+    // para fechar o processo
+    process.exit();
 })
