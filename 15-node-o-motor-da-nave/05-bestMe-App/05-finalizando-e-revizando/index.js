@@ -16,6 +16,7 @@ const ask = (index = 0) => {
 ask()
 
 const answers = [];
+// mantém o programa rodando sem parar
 process.stdin.on("data", data => {
    answers.push(data.toString().trim());
 
@@ -28,9 +29,10 @@ process.stdin.on("data", data => {
    
 });
 
+// função que fica ouvindo o exit()
 process.on('exit', () => {
     console.log(`
-        Bacana, Mayk!
+        Bacana, Carlos!
 
         O que você aprendeu hoje foi:
         ${answers[0]}
@@ -45,4 +47,4 @@ process.on('exit', () => {
 
         Volta amanhã para novas reflexiões
     `)
-})
+});
