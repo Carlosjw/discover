@@ -8,6 +8,13 @@
 }
 
 @font-face {
+    font-family: "MontserratSemiBold";
+    src: url(fonts/Montserrat-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Montserrat";
     src: url(fonts/Montserrat-Regular.ttf) format('truetype');
     font-weight: normal;
@@ -18,11 +25,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
 }
 
 body{
     width: auto;
+    font-family: "Montserrat";
     background: url(assets/background.png) repeat-y;
     background-size: cover;
     background-attachment: fixed;
@@ -31,6 +38,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 header.header-content {
@@ -73,7 +81,6 @@ header.header-content .navigation .main-list{
 }
 
 header.header-content .navigation .main-list li{
-    /* width: 33.6%; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -202,9 +209,10 @@ main.main-content .images{
 }
 
 main.main-content .images img{
-    width: 317.13px;
-    height: 207.98px;
+    width: 307.13px;
+    height: 177.98px;
     border: 1px solid #fff;
+    margin-right: 10px;
     margin-bottom: 60.44px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
 
@@ -223,21 +231,84 @@ main.main-content .images img:nth-child(7){
 }
 
 main.main-content .images img:nth-child(8){
-    margin-bottom: 0;    
+    margin-bottom: 0;
 }
 
 div.articles{
     width: 100%;
+    height: 660px;
     display: flex;
-    background: #0E0E0E;
+    background: rgba(14, 14, 14, 0.9);
+}
+
+div.articles .numbers{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #5A5757;
+    border-right: 1px solid #5A5757;
+}
+
+div.articles .numbers div{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.articles .numbers div span:first-child{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60.95px;
+}
+
+div.articles .numbers div span:last-child{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5A5757;
+    line-height: 24.38px;
 }
 
 div.articles .paragraphes-banner{
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
 
 div.articles .paragraphes-banner .paragraphes{
+    flex: 1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
     display: flex;
+    align-items: center;
+    padding: 71px;
+}
+
+div.articles .paragraphes-banner .paragraphes div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.articles .paragraphes-banner .paragraphes div:first-child{
+    margin-right: 71px;
+}
+
+div.articles .paragraphes-banner .paragraphes div p a{
+    color: #FF5B50;
+}
+
+div.articles .paragraphes-banner .paragraphes div > a{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: #fff;   
 }
 
