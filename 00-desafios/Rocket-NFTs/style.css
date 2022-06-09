@@ -109,8 +109,11 @@ header.header-content .navigation #btn{
 }
 
 header.header-content .navigation #btn:hover{
-    background: #FF5B50;
-    color: var(--white);
+    color: #fff;
+    background: #FF5B50;;
+    box-shadow: 2px 4px 8px rgba(255, 58, 70, 0.5);
+    outline: 1px solid #5A5757;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -214,8 +217,13 @@ main.main-content .images img{
     border: 1px solid #fff;
     margin-right: 10px;
     margin-bottom: 60.44px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
 
+main.main-content .images img:hover{
+    box-shadow: 6px 6px 8px rgba(255, 58, 70, 0.5);
+    outline: 1px solid #FF5B50;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 main.main-content .images img:nth-child(5){
