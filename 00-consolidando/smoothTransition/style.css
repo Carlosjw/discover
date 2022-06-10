@@ -1,0 +1,52 @@
+body{
+    width: auto;
+    height: 100vh;  
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 40%;
+    height: 120px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 60px;
+    box-shadow: inset 3px 5px 4px rgba(0, 0, 0, 0.5),  4px 3px 7px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+    outline: 2px solid #7A7A7A;
+}
+
+main img{
+    margin-right: -60px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.5));
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+    border-radius: 60px;
+}
+
+main:hover{
+    width: 60%;
+    gap: .8rem;
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+}
+
+main:hover img{
+    margin-right: 0;
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+}
+
+main img:active{
+    padding:10px;
+    margin-top: -150px;
+    background: #7A7A7A;
+    transition: 0.5s;
+    -webkit-transition: 0.75s;
+    box-shadow: inset 3px 5px 4px rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5)    
+}
