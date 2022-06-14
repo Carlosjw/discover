@@ -13,7 +13,39 @@ app.set("view engine", "ejs");
 
 // criand uma rota
 app.get("/", function(req, res){
-    res.render("pages/index");
+    const items = [
+        {
+            title: 'D',
+            message: 'esenvolver aplicações/serviços de forma fácil'
+        },
+        {
+            title: "E",
+            message: 'JS usa JavaScript para renderizar HTML.'
+        },
+        {
+            title: 'M',
+            message: 'uito fácil de usar'
+        },
+        {
+            title: 'A',
+            message: "morzinho"
+        },
+        {
+            title: "I",
+            message: 'nstall EJS'
+        },
+        {
+            title: 'S',
+            message: "intaxe simples"
+        }
+
+    ];
+
+    const subtitle = "Uma linguagem de modelagem para criação de páginas HTML utilizando JavaScript";
+    res.render("pages/index", {
+        qualitys: items,
+        subtitle: subtitle,
+    });
     // res.render() espera que o arquivo seja .ejs e esteja dentro de uma pasta chamada view
 });
 
