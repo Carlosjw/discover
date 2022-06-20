@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <%- include('../partials/head')%>
+    
+    <body>
+        <main class="main-content">
+
+            <div class="form">
+                <img src="/images/login.svg" alt="login icon" id="main-image">
+                <form action="/" class="login-form">
+                    <label for="name">Nome</label>
+
+                    <div class="inputs">
+                        <input type="text" name="name" id="name" required placeholder="Digite seu usuário...">
+                        <img src="/images/user.svg" alt="user icon">
+                    </div>
+
+                    <label for="pass">Senha</label>
+                    <div class="inputs">
+                        <input type="password" name="pass" id="pass" required placeholder="Digite sua senha">
+                        <img src="/images/password.svg" alt="password icon">
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">LOGAR</button>
+                        <button type="reset">CANCELAR</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <%- include('../partials/footer') %>
+    </body>
+
+</html>

@@ -1,6 +1,11 @@
 *{
+/*     margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+
+    /* border: 1px solid red; */
 }
 
 @font-face {
@@ -19,7 +24,128 @@ body{
     align-items: center;
     justify-content: center;
     background: #121214;
+    /* gap: .5rem; */
 }
+
+.form {
+    width: 25%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.5), 2px 3px 6px rgba(0, 0, 0, 0.5); */
+}
+
+.form .login-form {
+    width: 100%;
+    height: 70%;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+}
+
+.form > img{
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.5));
+    /* border: 1px solid red; */
+
+}
+
+.form .login-form label, .form .login-form .inputs input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    
+}
+
+.form .login-form label {
+    margin-top: 10px;
+    font-family: 'Dancing';
+    font-size: 18px;
+    color: #A9ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+}
+
+.login-form label:first-child{
+    margin-top: 0;
+}
+
+.form .login-form .inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.form .login-form .inputs img{
+    width: 24px;
+    height: 24px;
+    margin-left: -30px;
+    /* box-shadow: none; */
+    /* stroke: 1px solid black; */
+}
+
+.form .login-form .inputs input {
+    padding: 10px 35px 10px 10px;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.form .login-form .buttons{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: .5rem;
+}
+
+.form .login-form .buttons button{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form .login-form .buttons button:first-child:hover{
+    /* background: #006466; */
+    color: #006466;
+}
+
+.form .login-form .buttons button:last-child:hover{
+    color: red;
+}
+
+.form .login-form .buttons button:last-child{
+    /* margin-right: -10px; */
+}
+
+.form .login-form .buttons button:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.form .login-form .buttons button:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
 
 .main-header{
     width: 100%;
@@ -30,7 +156,7 @@ body{
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.main-header nav {
+.main-header nav{
     width: 100%;
     height: 100%;
     display: flex;
@@ -47,7 +173,7 @@ body{
     list-style: none;
 }
 
-ul li, a{
+.main-header nav ul li a, .main-content02 .product-nav ul li a{
     width: 100%;
     height: 100%;
     display: flex;
@@ -59,24 +185,25 @@ ul li, a{
 
 }
 
-a img {
+.main-header nav ul li a img, .main-content02 .product-nav ul li a img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
 
-ul li:hover, a:hover{
+.main-header nav ul li:hover, .main-header nav ul li a:hover{
     height: 47px;
     color: #FFF;
     box-shadow:0 4px 0 rgba(0, 100, 102, 0.5);
     transition: 0.5s;
 }
 
-ul li:nth-child(6){
+.main-header nav ul li:nth-child(6){
     border-radius: 0 10px 10px 0;
 }
 
 .main-content{
+    margin-top: 20px;
     width: 90%;
     height: 100%;
     display: flex;
@@ -89,16 +216,51 @@ ul li:nth-child(6){
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.main-content .welcome-page{
-    width: 50%;
-    height: 50%;
+.main-content h1, .main-content02 h1{
+    font-family: 'Dancing';
     color: #737380;
-    text-align: justify;
 }
 
-.main-content .welcome-page h1{
-    font-family: 'Dancing';
-    color: #006466;
+.main-content02{
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #202024;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.main-content02 .product-nav {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content02 .product-nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+    height: 100%;
 }
 
 .footer-content {
@@ -112,7 +274,7 @@ ul li:nth-child(6){
     bottom: 0;
 }
 
-.footer-content .copyright p span{
+.footer-content .copyright p span, .footer-content #version{
     font-family: 'Dancing';
     color: #006466;
 }
