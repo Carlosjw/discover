@@ -40,7 +40,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
-    background: #202024;
+    background: rgba(115, 115, 128, .25);
 
 }
 
@@ -72,7 +72,7 @@ body{
     width: 100%;
     outline: none;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     
 }
 
@@ -125,18 +125,26 @@ body{
     width: 50%;
     height: 100%;
     cursor: pointer;
+    color: #202024;
+    font-weight: bold;
     border: none;
     font-weight: bold;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    background: #D9D9D9;
+}
+
+.form .login-form .buttons button:last-child{
+    color: #737380;
 }
 
 .form .login-form .buttons button:first-child:hover{
-    /* background: #006466; */
-    color: #006466;
+    background: rgba(0, 104, 105, 0.5);
+    color: #FFF;
 }
 
 .form .login-form .buttons button:last-child:hover{
-    color: red;
+    background: rgba(255,0,0,0.5);
+    color: #fff;
 }
 
 .form .login-form .buttons button:last-child{
@@ -155,7 +163,6 @@ body{
 .main-header{
     width: 100%;
     height: 50px;
-    /* background: #202024; */
     background: rgba(32, 32, 36, 0.95);
     color: #737380;
     border-radius: 10px;
@@ -188,9 +195,6 @@ body{
     align-items: center;
     justify-content: center;
     text-decoration: none; 
-    /* border-radius: 5px; */
-
-
 }
 
 .main-header nav ul li a img, .main-content02 .product-nav ul li a img {
@@ -202,13 +206,9 @@ body{
 .main-header nav ul li:hover, .main-header nav ul li a:hover{
     height: 47px;
     color: #FFF;
-    /* box-shadow:0 4px 0 rgba(0, 100, 102, 0.5); */
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
     box-shadow: 0 3px 0 rgba(255, 255, 255, 0.5);
-    transition: 0.5s;
-}
-
-.main-header nav ul li:nth-child(6){
-    border-radius: 0 10px 10px 0;
 }
 
 .main-content{
