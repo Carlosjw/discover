@@ -18,14 +18,15 @@
             <!-- não usar o traço após o % quando for usar código JavaScript -->
             <% qualitys.forEach(function(quality){ %>
                 <li>
-                    <strong><%= quality.title %></strong><%= quality.message %>
+                    <strong><%= quality.title %></strong>
+                    <strong><%= quality.message %></strong>
                 </li> 
             <% }) %>
 
 
         </ul>
     </main>
-
-    <%- include('../partials/footer'); %>
+    <%- include('../partials/info') %>
+    <%- include('../partials/footer') %>
 </body>
 </html>
