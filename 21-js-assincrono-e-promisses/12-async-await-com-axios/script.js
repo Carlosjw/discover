@@ -1,11 +1,15 @@
-import axios from 'axios'
+import axios from "axios";
 
-async function fetchRepos(){
-    const user = await axios.get('https://api.github.com/users/Carlosjw')
-    const repos = await axios.get(response.data.repos_url);
-    console.log(repos);
-
+async function fetchRepos() {
+  try {
+    // pegando o usuário
+    const user = await axios.get("htps://api.github.com/users/Carlosjw");
+    // pegando os repositório  do 'user'
+    const repos = await axios.get(user.data.repos_url);
+    console.log(repos.data);
+  } catch (e) {
+    console.log(e.message);
+  }
 }
 
-fetchRepos()
-
+fetchRepos();

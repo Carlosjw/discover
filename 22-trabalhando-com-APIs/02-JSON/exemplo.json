@@ -1,0 +1,23 @@
+{
+    "nome":"Carlos Lima",
+    "idade": 35,
+    "cidade": "Marabá",
+    "livros_favoritos": [
+        "use a cabeça",
+        "javascript cookbook",
+        "fullstack react"
+    ],
+    "hobbies": {
+        "diario": "estudar",
+        "ocasional": "tocar violão",
+        "fim_de_semana": {
+            "sabado": "praia",
+            "domingo": "shopping",
+            "outros": [
+                "caminhada",
+                "corrida em casa",
+                "netflix"
+            ]
+        }
+    }
+}
