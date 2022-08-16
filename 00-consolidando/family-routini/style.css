@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 @font-face {
@@ -34,10 +35,10 @@ div.container{
 }
 
 div.container .weekday:first-child{
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
 div.container .weekday:last-child{
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
 }
 
 div.weekday{
@@ -45,20 +46,21 @@ div.weekday{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: .8rem; */
+    /* border: 1px solid; */
 }
 
 div.weekday{
     height: 100%;
     flex: 1;
     box-shadow: 3px 4px 7px rgba(91, 60, 136, 0.5);
+    border-radius: 0 10px 10px 0;
 }
 
 div.weekday:hover{
     box-shadow: 13px 15px 20px rgba(91, 60, 136, 0.5);
+    /* border: 1px solid rgba(91, 60, 136, 0.25); */
     transition: 0.5s;
     -webkit-transition: 0.5s;
-    cursor: pointer;
 }
 
 div.monday{
@@ -66,8 +68,6 @@ div.monday{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
-    /* border: 1px solid rgb(40, 14, 134); */
     gap: 15px;
 }
 
@@ -100,7 +100,16 @@ div.task{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border-radius: 5px;
 }
+
+/* div.task:hover{
+    background: rgba(91, 60, 136, 0.25);   
+    box-shadow: 13px 15px 20px rgba(91, 60, 136, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+} */
 
 div.task span:first-child{
     font-size: 24px;
@@ -116,9 +125,9 @@ span{
     gap: 5px;
 }
 
-h3:hover{
-    color: #5B3C88;
+h3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
