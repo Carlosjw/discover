@@ -2,37 +2,37 @@ const express = require('express');
 
 const app = express()
 
-app.listen('3000');
+app.listen('3000'); // listem fica ouvindo o navegador a partir da porta que definimos
 
-/* rota GET
-app.route('/').get((req, res) => res.send('Hello'))
-app.route('/sobre').get((req, res) => res.send('Hello sobre')) */
+// rota GET
+// app.route('/').get((req, res) => res.send('Hello'));
+
+// rota sobre
+// app.route('/sobre').get((req, res) => res.send('Hello sobre'))
 
 /* 
     / => define a rota padrão base/inicial ou link inicial do site
     get((req, res)) => sempre usados quando formos trabalhar com rotas, significa 'requisição' e 'response'
 */
 
-/* // rota POST
-app.use(express.json()) // middleware => fazer a ponte quando for usar o Insomnia
-app.route('/').post((req, res) => res.send (req.body)) */
+// middleware => fazer a ponte quando for usar o JSON do Insomnia
+app.use(express.json());
 
-app.use(express.json()) // middleware
+// rota POST
+app.route('/').post((req, res) => res.send (req.body)); // envia o corpo da requisição
 
 // rota PUT: editar
-
-/* let author = 'Carlos'
-
+let author = 'Carlos';
 app.route('/').get((req, res) => res.send(author));
 
 app.route('/').put((req, res) =>{
-    author = req.body.author // recebe apenas o valor da propriedade author do JSON
+    author = req.body.author; // recebe apenas o valor da propriedade author do JSON
     res.send(author)
-}); */
+});
+
+app.route('/').get((req, res) => res.send(author))
 
 // rota DELETE
-let author = "Carlos Lima"
-
 app.route('/:identificador').delete((req, res) => {
     res.send(req.params.identificador)
 })
