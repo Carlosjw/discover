@@ -1,0 +1,1 @@
+* O express não faz requisições a APIs, é usado para criar APIs, mas ele não tem um método para irmos até uma API e pegarmos os dados dela, por isso usamos o Axios.

@@ -21,6 +21,11 @@
             justify-content: center;
             gap: 10px;
             background: gray;
+            border-radius: 20px;
+            outline: 15px solid #FFFF;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            box-shadow: inset 7px 8px 16px rgba(0, 0, 0, 0.5), 7px 8px 16px rgba(0, 0, 0, 0.5);
         }
 
         .card{
@@ -28,11 +33,16 @@
             height: 100%;
             background: silver;
             border-radius: 10px;
+            z-index: 10;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
             box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
         }
 
         .card:hover{
+            flex: 2;
             margin-top: -80px;
+            /* border-radius: 10px 50% 50% 10px; */
             box-shadow: 7px 8px 16px rgba(0, 0, 0, 0.5);
             transition: 0.5s;
             -webkit-transition: 0.5s;
