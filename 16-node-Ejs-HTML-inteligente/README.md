@@ -8,5 +8,5 @@ Uma linguagem de modelagem para criação de páginas HTML utilizando JS
 * EJS usa JavaScript para renderizar HTML
 * Muito fácil de fazer debugging
 * Amorzinho
-* Instal ejs
+* Install ejs
 * Sintaxe simples
