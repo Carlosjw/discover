@@ -8,7 +8,10 @@ server.use(express.static(__dirname + '/public')); // habilitando o acesso ao CS
 
 
 server.get('/', (req, res) => {
-    res.render('pages/index')
+    res.render('pages/index');
+})
+server.get('/cards', (req, res) => {
+    res.render('pages/cards');
 })
 
 server.listen(3000)
