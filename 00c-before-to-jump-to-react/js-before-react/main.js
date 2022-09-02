@@ -1,0 +1,1 @@
+document.body.innerHTML = '<h1>Testando o <i style=color="blue;">Vite<i></h1>'
