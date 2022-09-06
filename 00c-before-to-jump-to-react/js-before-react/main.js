@@ -38,9 +38,15 @@ const par = array.findIndex(item => item % 2 === 0)
 
 // reduce: cria uma nova estrutura a partir do array
 const soma = array.reduce((acc, item) => {
-    document.body.innerText += acc + ',' + item + ' | ';
+    document.body.innerText += acc + ',' + item + ' \n ';
 
     return acc + item;
 }, 0);
 
-// document.body.innerText = JSON.stringify(par)
+// teplate literals
+const name = null
+const message = `Bem vindo, ${name ?? 'Visitante'}`
+
+// Promises
+
+document.body.innerText = JSON.stringify(message)
