@@ -1,52 +1,18 @@
-// Arrays: métodos
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// importando uma por uma
+/* import { sum, subtrair } from './lib/math'
 
-// iterando com o for
-for(const i of array){
-    document.body.innerText += i;
-}
+document.body.innerText = sum(1, 2);
+document.body.innerText = subtrair(7, 2); */
 
-// iterando com forEach: não permite um retorno de dentro do método
-array.forEach(item => {
-    document.body.innerText += item;
-})
+// importando tudo
+/* import * as math from './lib/math'
 
-// iterando com o map: possibilita o uso do return e sempre vai retornar uma array com o tamanho do array original. Só usamos o map quando queremos retornar um novo array com algum mudança no valor do itens do original, mas não na quantidade de itens.
-const newArray = array.map(item => {
-    if(item % 2 === 0){
-        return item * 10
-    }
+console.log(math)
+document.body.innerText = math.sum(3, 6);
+document.body.innerText = math.sub(3, 6); */
 
-    return item;
-})
+// importando e renomeando
+import { sum as soma } from './lib/math'
 
-// filter: filtra um array: só filtra, corta, mas não altera os valores
-const novoArray = array.filter(item => item % 2 !== 0)
+document.body.innerText = soma(5, 9)
 
-// every: retorna true se todos os items passarem na condição que passarmos como parâmetro, e false se pelo menos um deles não passar
-const allItemsTypeIsNumber = array.every(item => {
-    return typeof item === 'number';
-});
-
-// some: verifica se pelo menos um item satisfaz a condição passada nos seus parâmetros
-const atLeastOneItemIsNoteANumber = array.some(item => {
-    return typeof item !== 'number';
-});
-
-// find: procura apenas um item no array
-const par = array.findIndex(item => item % 2 === 0)
-
-// reduce: cria uma nova estrutura a partir do array
-const soma = array.reduce((acc, item) => {
-    document.body.innerText += acc + ',' + item + ' \n ';
-
-    return acc + item;
-}, 0);
-
-// teplate literals
-const name = null
-const message = `Bem vindo, ${name ?? 'Visitante'}`
-
-// Promises
-
-document.body.innerText = JSON.stringify(message)
