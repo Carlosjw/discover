@@ -1,10 +1,28 @@
-const url = "https://api.github.com/users/Carlosjw"
+const url = "https://swapi.dev/api/"
 
-function getUSer(){
-    fetch(url)
-    .then(response => JSON.stringify(response))
-    .then(data => console.log(JSON.stringify(data)))
+/* function getUSer(){
+    axios.get(url)
+    .then(response => {
+
+        console.log(response.data)
+        const data = response.data;
+
+        userCompany.textContent = data.company;
+        messageUser.textContent = data.bio;
+        userAvatar.src = data.avatar_url;
+    })    
     .catch(error => console.error(error))
 }
 
-getUSer()
+getUSer() */
+
+function siteInfor(){
+    axios.get(url)
+    .then(response => console.log(response))
+    .then(data => {
+        userInfor.textContent = data;
+    })
+    .catch(error => console.error(error))
+}
+
+siteInfor()
