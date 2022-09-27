@@ -5,10 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumindo APIs com Axios</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
-    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: silver;
+        }
+
+        hr{
+            width: 100%;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            padding: 5px;
+   /*          border: 1px solid;
+            outline: 1px solid; */
+            background: #FFF;
+            box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="apiResult">Olá</div>
+
+    <hr>
+
+    <p id="userName"></p>
+    <p id="userCity"></p>
+    <p id="userId"></p>
+    <img src="" id="userAvatar">
+
+
 </body>
 </html>
