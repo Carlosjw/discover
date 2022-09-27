@@ -11,8 +11,8 @@ function getUsers(){
 }
 
 // pegando um único usuário
-function getUser(){
-    fetch(`${url}/1`) // acessando usuário pelo ID
+function getUser(id){
+    fetch(`${url}/${id}`) // acessando usuário pelo ID
     .then(response => response.json())
     .then(data => {
         // chamando DOM direto
@@ -41,8 +41,8 @@ function addUser(newUser){
 }
 
 // PUT
-function updateUser(updatedUser){
-    fetch(`${url}/1`, {
+function updateUser(updatedUser, id){
+    fetch(`${url}/${id}`, {
         method: "PUT",
         body: JSON.stringify(updatedUser),
         headers: {
@@ -54,6 +54,20 @@ function updateUser(updatedUser){
     .catch(error => console.log(error))
 }
 
+// DELETE
+function deleteUser(id){
+    fetch(`${url}/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json; charset-UTF-8"
+        }
+
+    })
+    .then(response => response.json())
+    .then(data => alertApi.textContent = data)
+    .catch(error => console.error(error))
+}
+
 const newUser = {
     name: 'Carlos Lima',
     avatar: 'https://picsum.photos/200/300',
@@ -62,12 +76,16 @@ const newUser = {
 
 // PUT
 const updatedUser = {
-    name: "Solange Lima",
-    avatar: "images/solange.jpg",
+    name: "Carlos Lima",
+    avatar: 'https://avatars.githubusercontent.com/u/68574705?v=4',
     city: 'Marabá'
 }
 
 // addUser(newUser)
 
+// updateUser(updatedUser, 6);
+
 getUsers()
-getUser()
+getUser(6)
+
+deleteUser(25)
