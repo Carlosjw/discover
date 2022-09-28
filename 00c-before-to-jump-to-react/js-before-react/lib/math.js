@@ -1,3 +1,4 @@
+// funções que serão exportadas
 export function sum(a, b){
     return a + b
 }
