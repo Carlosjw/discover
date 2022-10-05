@@ -1,11 +1,11 @@
 /* importando hook para criação de estados */
-import React,  {useState} from 'react';
+import React,  {useState, useEffect} from 'react';
 
+// importando estilos
 import './styles.css';
 
 // importando componente
 import { Card } from '../../components/Card';
-/* import { useState } from 'react'; */
 
 export function Home() {
   /* Utilizando o estado */
@@ -33,10 +33,22 @@ export function Home() {
 
   }
 
+  useEffect(() => {
+    // corpo do useEffect
+    console.log('useEffect foi chamado!')
+  }, [])
+
   return (
     // Embrulhando tudo no fragment
     <div className="container">
-      <h1>Lista de presença</h1>
+      <header>
+        <h1>Lista de presença</h1>
+        <div>
+          <strong>Carlos</strong>
+          <img src="https://github.com/Carlosjw.png" alt="github perfil" />
+        </div>
+
+      </header>
       <input
         type="text"
         placeholder="Digite o nome..."
@@ -53,7 +65,12 @@ export function Home() {
       {/* Envolver por chaves indica que vamos usar conteúdo de uma variável */}
       {
         students.map((student) => (
-          <Card name={student.name} time={student.time} />))
+          <Card
+            key={student.time}
+            name={student.name}
+            time={student.time}
+          />
+        ))
         // Para cada estudante será renderizado um cartão
       }
 {/*       <Card name="Solange" time="11:00:10"/>
