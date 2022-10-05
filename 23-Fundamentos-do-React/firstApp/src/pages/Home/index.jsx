@@ -17,6 +17,9 @@ export function Home() {
 
   const [students, setStudents] = useState([]);
 
+  // estado para acessar as informações da API do GitHub
+  const [user, setUser] = useState({name: '', avatar: ''});
+
   function handleAddStudent(){
     const newStudent = {
       name: studentName,
@@ -31,12 +34,39 @@ export function Home() {
     // adicionando objeto ao estado e mantendo o conteúdo o estado anterior com o spred operator dentro da variável prevState
     setStudents(prevState => [...prevState, newStudent])
 
-  }
+  };
 
+  // useEffect tradicional
   useEffect(() => {
-    // corpo do useEffect
-    console.log('useEffect foi chamado!')
-  }, [])
+    // corpo do useEffect: açoes ou aquilo que queremos que seja executado
+    fetch('https://api.github.com/users/Carlosjw')
+    .then(response => response.json())
+    .then(data => {
+      setUser({
+        name: data.name,
+        avatar: data.avatar_url
+      })
+    })
+  }, []); // useEffect será executado toda vez que o estado do array for executado
+
+  // useEffect assíncrono
+  useEffect(() => {
+    async function fecthData() {
+      const response = await fetch('https://api.github.com/users/Carlosjw');
+      const data = await response.json();
+      console.log('DADOS ===> ', data);
+
+      setUser({
+        name: data.name,
+        avatar: data.avatar_url,
+      })
+    }
+  })
+
+  /* 
+    O array do useEffect armazena os estados dos quais ele depende.
+    Quando deixamos o array do useEffect vazio, ele só será executado uma única vez: quando nossa tela for renderizada.
+  */
 
   return (
     // Embrulhando tudo no fragment
@@ -44,8 +74,8 @@ export function Home() {
       <header>
         <h1>Lista de presença</h1>
         <div>
-          <strong>Carlos</strong>
-          <img src="https://github.com/Carlosjw.png" alt="github perfil" />
+          <strong>{user.name}</strong>
+          <img src={user.avatar} alt="github perfil" />
         </div>
 
       </header>
