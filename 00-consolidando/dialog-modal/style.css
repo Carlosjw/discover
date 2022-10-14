@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+#openModal{
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#openModal:hover{
+    background: skyblue;
+    box-shadow: 0 0 1em rgba(0 0 0 / .3);
+    transition: .2s;
+}
+
+/* Editando background do modal com backdrop */
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .3);
+}
+
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 80%;
+}
+
+dialog #closeModal {
+    width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+dialog #closeModal:hover{
+    color: #fff;
+    background: rgb(240, 101, 101);
+    box-shadow: 0 0 1em rgba(0 0 0 / .3);
+    transition: .2s;
+}
