@@ -1,5 +1,6 @@
 let target = document.querySelector("#target");
 let btn = document.querySelector("#btn");
+let randomList = document.querySelector("#lista");
 let elementos = document.querySelectorAll('.lista');
 let targetElements = document.querySelectorAll('.new-lista');
 
@@ -51,8 +52,10 @@ console.log(Math.random())
 btn.onclick = function() {
     if(paragraph.style.display == 'flex'){
         paragraph.style.display = 'none';
+        randomList.style.display = 'none';
     } else {
         paragraph.style.display = 'flex'
+        randomList.style.display = 'flex'
         paragraph.style.padding = "20px";
         paragraph.style.borderRadius = "5px";
         paragraph.style.backgroundColor = "skyblue";
