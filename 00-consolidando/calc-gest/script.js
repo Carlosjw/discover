@@ -17,7 +17,7 @@ let dayData = document.querySelector("#dayData");
 
 btn.addEventListener("click", function(){
   dayData.textContent = userData.valueAsNumber;
-  console.log(userData)
+  console.log(userData.valueAsNumber);
 })
 
 
