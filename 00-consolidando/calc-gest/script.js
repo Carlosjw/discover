@@ -8,11 +8,16 @@ let secondAndThirdMonth = 100000;
 let secondQuarter = 30000;
 let thirdQuarter = 15000;
 
+// Pegando botao
+let btn = document.querySelector("#btn");
 // Pegando valor do input
 let userData = document.querySelector("#qtd").value;
 // Pegando campo dia alvo
 let dayData = document.querySelector("#dayData");
 
+btn.onclick = function(){
+  dayData.textContent = userData;
+}
 
 /* 
     Week Names:
