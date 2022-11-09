@@ -1,0 +1,20 @@
+{
+  "name": "discover",
+  "version": "1.0.0",
+  "description": "* Polir e acelerar conhecimentos desorganizados a partir de cursos anteriores;\r * Adquirir conhecimento e habilidade suficientes para seguir rumo ao próximo nível: IGNITE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlosjw/discover.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlosjw/discover/issues"
+  },
+  "homepage": "https://github.com/Carlosjw/discover#readme"
+}
