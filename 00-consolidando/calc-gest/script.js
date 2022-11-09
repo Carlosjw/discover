@@ -17,7 +17,10 @@ let dayData = document.querySelector("#dayData");
 
 btn.onclick = function(){
   dayData.textContent = userData;
+  console.log(userData)
 }
+
+
 
 /* 
     Week Names:
