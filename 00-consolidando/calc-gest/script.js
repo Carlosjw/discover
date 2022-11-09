@@ -15,10 +15,10 @@ let userData = document.querySelector("#qtd");
 // Pegando campo dia alvo
 let dayData = document.querySelector("#dayData");
 
-btn.onclick = function(){
+btn.addEventListener("click", function(){
   dayData.textContent = userData;
   console.log(userData)
-}
+})
 
 
 
