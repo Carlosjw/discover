@@ -11,7 +11,7 @@ let thirdQuarter = 15000;
 // Pegando botao
 let btn = document.querySelector("#btn");
 // Pegando valor do input
-let userData = document.querySelector("#qtd").value;
+let userData = document.querySelector("#qtd");
 // Pegando campo dia alvo
 let dayData = document.querySelector("#dayData");
 
