@@ -34,7 +34,6 @@ btn.addEventListener('click', function(){
 })
 
 // console.log(descriptions)
-
 descriptions.forEach(description => {
     let newElement = (description.previousElementSibling.outerText)
     // console.log(newElement)
