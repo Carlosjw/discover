@@ -15,16 +15,16 @@ let userData = document.querySelector("#qtd");
 // Pegando campo dia alvo
 let dayData = document.querySelector("#dayData");
 
+// Pegando todas as descrições
+let descriptionsValues = document.querySelectorAll(".descricao");
+
 btn.addEventListener("click", function(){
   dayData.innerHTML = userData.value;
   console.log(userData.value);
 })
 
+console.log(descriptionsValues)
 
-
-/* 
-    Week Names:
-
-    first, second, third, fourth, second and third month, second quarter, third quarter
-
-*/
+descriptionsValues.forEach(valueItem => {
+    console.log(valueItem.innerText);
+})
