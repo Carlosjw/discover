@@ -1,11 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
     text-rendering: optimizelegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    font-family: sans-serif;
+    font-family: 'Roboto';
+    color: #29292E;
 }
 
 body{
@@ -22,7 +29,8 @@ body{
 h1#gest{
     width: 450px;
     height: 60px;
-    color: gray;
+    /* color: #29292E; */
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,11 +40,6 @@ h1#gest{
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5), inset 2px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-h1#gest:hover{
-    color: #000;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
 div#container{
     margin: 10px;
     width: 450px;
@@ -44,7 +47,6 @@ div#container{
     padding: 10px;
     display: flex;
     gap: 10px;
-    /* border: 1px solid red; */
     background: #fff;
     border-radius: 10px;
     outline: 2px solid silver;
@@ -61,8 +63,6 @@ div#datas-users{
     justify-content: center;
     gap: 5px;
     border-radius: 10px;
-    /* margin: 10px; */
-    /* border: 1px solid rgb(65, 197, 25); */
     outline: 2px solid silver;
     box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.5); 
 
@@ -92,10 +92,7 @@ div#user-datas #inputs{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    /* border: 1px solid red;     */
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
-    /* margin-bottom: 10px; */
-
 }
 
 
@@ -130,10 +127,10 @@ div#user-datas #inputs span:first-child input#qtd::placeholder{
 
 div#user-datas #inputs span:last-child{
     flex: 1;
+    /* border-top: 1px solid #29292E; */
     width: 100%;
-    /* height: 100%; */
     padding: 5px;
-    color: #fff;
+    /* color: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,8 +138,6 @@ div#user-datas #inputs span:last-child{
     border-radius: 0 0 5px 5px;
     outline: 1px solid silver;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-    /* border: 1px solid red;     */
-
 }
 
 div#user-datas #datas{
@@ -152,7 +147,6 @@ div#user-datas #datas{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid red;     */
     outline: 1px solid silver;
     border-radius:5px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);
@@ -162,7 +156,6 @@ div#user-datas #datas{
 div#user-datas #datas input[type="datetime-local"]{
     flex: 1;
     height: 100%;
-    /* width: 100%; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -177,21 +170,29 @@ div#user-datas button{
     flex: 1;
     width: 100%;
     height: 60px;
-    color: #fff;
+    /* color: rgb(255, 255, 255); */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     background: gray;
     border: none;
     border-radius:5px;
     outline: 1px solid silver;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 div#user-datas button:hover{
-    color: #000;
-    background: silver;
+    color: #fff;
+    background: #29292E;
+
+    /* background: silver; */
     cursor: pointer;
     outline: 1px solid gray;
     transition: 0.5s;
+    -webkit-transition: 0.5s;
+    text-shadow:none;
+
 }
 
 div#user-datas button:active:focus{
@@ -199,9 +200,7 @@ div#user-datas button:active:focus{
 }
 
 dl#ages{
-    /* flex: 1; */
     width: 45%;
-    /* height: 440px; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -212,12 +211,13 @@ dl#ages{
     background: #fff;
     outline: 2px solid silver;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
-    /* border: 1px solid blue; */
 }
 
 .titulo{
     width: 100%;
     padding: 5px;
+    color: #29292E;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -248,7 +248,8 @@ dl#ages{
 div.result{
     width: 100%;
     height: 60px;
-    color: #000;
+    color: #29292E;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
     font-weight: bold;
     padding: 5px;
     display: flex;
@@ -265,6 +266,7 @@ div.result{
 div.result span:first-child{
     flex: 2;
     height: 100%;
+    /* color: #000; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,6 +288,7 @@ div.result span:last-child{
     padding: 5px;
     /* color: #fff; */
     background-color: gray;
+    /* border-left: 1px solid #29292E; */
     outline: 1px solid silver;
 
     border-radius: 0 5px 5px 0;
