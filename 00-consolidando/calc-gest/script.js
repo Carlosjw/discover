@@ -1,18 +1,45 @@
-const periodo = [30, 100, 1000, 10000, 100000, 30000, 15000]
+let descriptions = document.querySelectorAll(".descricao");
+let titles = document.querySelectorAll(".titulo");
+let btn = document.querySelector("#btn"); // pegando botão
+let userData = document.querySelector("#qtd"); // Pegando valor do input
+let dayData = document.querySelector("#dayData"); // pegando campo dia alvo
+let finalResults = document.querySelectorAll(".result");
 
-// semana
-let week = 7;
+let weekBase = 7;
 
-// array destructuring
-const [firstWeek, secondWeek, thirdWeek, fourthWeek, secondAndThirdMonth, secondQuarter, thirdQuarter] = periodo;
+btn.addEventListener('click', function(){
 
-// pegando todas as descrições
-let descriptionsValues = document.querySelectorAll(".descricao");
+    let mainData = Number(userData.value);
 
+    let references = []
 
+    descriptions.forEach(item => {
+        if(item.outerText.includes(' mUI/mL')){
+            item = Number(item.outerText.replace(" mUI/mL", ""))
+        }
+        references.push(item)
+    })
 
-console.log(descriptionsValues)
+    references.forEach((reference, index) =>{
+        
+    })
 
-descriptionsValues.forEach(valueItem => {
-    console.log(firstWeek);
+    // Personalizando resultados com CSS
+    titles.forEach(title => {
+        console.log(title.nextElementSibling.outerText);
+    })
+
+    console.log(dayData.textContent = typeof references);
+    console.log(references)
 })
+
+// console.log(descriptions)
+descriptions.forEach(description => {
+    let newElement = (description.previousElementSibling.outerText)
+    // console.log(newElement)
+})
+
+finalResults.forEach(finalResult => {
+    console.log(finalResult)
+})
+
