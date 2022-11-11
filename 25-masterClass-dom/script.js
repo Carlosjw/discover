@@ -6,16 +6,16 @@ let targetElements = document.querySelectorAll('.new-lista');
 
 let paragraph = document.querySelector("p");
 
-console.log(document)
+// console.log(document)
 /* 
     Exibe o documento rederizado como HTML
 */
 
-console.dir(document)
+// console.dir(document)
 /* 
     Exibe toda a árvore do documento HTML com suas propriedades e atributos
 */
-console.log(document.title) // exibe o título da pagina
+// console.log(document.title) // exibe o título da pagina
 
 elementos.forEach((element, index) => {
     target.innerHTML += `${index + 1} => ${element.textContent} ${"</br>"}`   
@@ -43,11 +43,11 @@ targetElements.forEach((targetElement, index )=> {
 
 })
 
-console.log(elementos)
+// console.log(elementos)
 
-console.log(targetElements)
+// console.log(targetElements)
 
-console.log(Math.random())
+// console.log(Math.random())
 
 btn.onclick = function() {
     if(paragraph.style.display == 'flex'){
@@ -62,3 +62,27 @@ btn.onclick = function() {
         paragraph.style.boxShadow = "inset 2px 3px 6px rgba(0, 0, 0, 0.5)";
     }
 }
+
+// div pai alvo
+let parentDiv = document.querySelector(".parentDiv");
+parentDiv.style = "width: 450px; height: 350px; border: none; border-radius: 10px; box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5); display: flex; flex-direction: column; align-items: center; justify-cotent: center; padding: 10px";
+
+// criando elemento h1
+let newH1 = document.createElement("h1");
+newH1.style = "color: blue; font-weight: bold;"
+newH1.innerText = "Eu surgi milagrosamente aqui";
+
+// criando novo span
+let newSpan = document.createElement("span");
+newSpan.innerHTML = "<i>Olha eu aqui</i>";
+newSpan.style = "color: red; font-weight: bold; font-size: 24px; padding: 5px";
+
+// new H4 element
+let newH4 = document.createElement("h4");
+newH4.style = "color: green";
+newH4.innerText = "Eu sou um H4 criado pela DOM"
+
+document.body.insertBefore(newH4, parentDiv); // inserindo antes
+document.body.insertBefore(newH4, parentDiv.nextSibling); // inserindo depois;
+parentDiv.append(newH1) // inserindo no final
+parentDiv.prepend(newSpan) // inserindo no começo
