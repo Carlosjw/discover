@@ -33,13 +33,13 @@ btn.addEventListener('click', function(){
     console.log(references)
 })
 
-// console.log(descriptions)
+console.log(descriptions)
 descriptions.forEach(description => {
     let newElement = (description.previousElementSibling.outerText)
-    // console.log(newElement)
+    console.log(newElement)
 })
 
 finalResults.forEach(finalResult => {
-    console.log(finalResult)
+    // console.log(finalResult)
 })
 
