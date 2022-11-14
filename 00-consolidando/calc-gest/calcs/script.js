@@ -1,6 +1,15 @@
+let mainParent = document.querySelector("body");
 let parentDiv = document.querySelector("#container");
 let target = document.querySelector("#target")
 
+// definindo semana
+let hourDay = 24;
+let week = 7;
+let hoursWeek = week * hourDay;
+console.log(hoursWeek)
+
+// resultado exame
+let result = 230.91;
 
 let primeraSemana = 30;
 let segundaSemana = 100;
@@ -10,54 +19,38 @@ let segundoETerceiroMes = 100000;
 let segundoTrimestre = 30000;
 let terceiroTrimestre = 15000;
 
+let unkNown = 900 / week
 
-// resultado exame
-let result = 30000
+let myName = "Carlos Lima";
 
-let firstWeek = result >= primeraSemana && result < segundaSemana;
-let secondWeek = result >= segundaSemana && result < terceiraSemana;
-let thirdWeek = result >= terceiraSemana && result < quartaSemana;
-let fouthWeek = result >= quartaSemana && result < segundoETerceiroMes;
-let secondAndThirdMonth = result <= segundoETerceiroMes && result > segundoTrimestre;
-let secondQuarter = result < segundoETerceiroMes && result > terceiroTrimestre;
-let thirdQuarter = result <= terceiroTrimestre && result >= 500;
+// definindo um/ml
+let dayFirstWeek = primeraSemana / week // 4.285714285714286
+let daySecondWeek = segundaSemana / week // 14.285714285714286
+let dayThirdWeek = terceiraSemana / week // 142.85714285714286
 
+let weekBaby = result / dayThirdWeek // 16.1637
 
-let week = 7;
+let restWeekBaby = result % daySecondWeek
 
-// gerando array com as propriedades do objeto
-// let ages = Object.values(periodos);
+console.log(` Sobra: ${week * 0.6163699999999999}`)
 
+console.log(weekBaby)
 
 
 
-/* for(let indice = 0; indice < ages.length; indice++){
-    console.log(indice, ages[indice])
-} */
 
-switch(result){
-    case firstWeek:
-        console.log("Primeira Semana");
-        break;
-    case secondWeek:
-        console.log("Segunda Semana");
-        break;
-    case thirdWeek:
-        console.log("Terceira Semana");
-        break;
-    case fouthWeek:
-        console.log("Quarta Semana");
-        break;
-    case secondAndThirdMonth:
-        console.log("Segundo e Terceiro Mês");
-        break;
-    case secondQuarter:
-        console.log("Segundo Trimestre");
-        break;
-    case thirdQuarter:
-        console.log("Terceiro Trimestre");
-        break;
-    default:
-        console.log("Você não está grávida");
-        break;
-}
+
+mainParent.style = "display: flex; flex-direction: column; align-items: center; justify-content: center; background: gray;"
+
+let childDiv = document.createElement("div");
+childDiv.style = "width: 200px; height: 400px; padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: silver; border-radius: 10px; box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); overflow: auto";
+
+mainParent.append(childDiv)
+
+let ulChild = document.createElement("ul");
+ulChild.setAttribute("id", "my-ul");
+childDiv.append(ulChild);
+
+let liChild = document.createElement("li");
+
+console.log("hello")
