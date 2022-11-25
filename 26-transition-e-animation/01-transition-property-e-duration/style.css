@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-red {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.box-red {
+    background-color: #f00;
+    transition-property: background-color;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.box-red:hover{
+    background-color: yellow;
+    transition-property: background-color, width;
+    width: 200px;
+    transition-duration: 1s;
+}
