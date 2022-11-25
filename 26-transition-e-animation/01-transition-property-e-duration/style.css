@@ -14,13 +14,17 @@ body{
 .box-red {
     background-color: #f00;
     transition-property: background-color;
-    transition-property: all;
+    transition-property: all; /* all vai transicionar qualquer coisa que for mudada */
     transition-duration: 1s;
+    box-shadow:inset 2px 6px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .box-red:hover{
-    background-color: yellow;
+    background-color: rgb(22, 175, 117);
+    /* transition-property transiciona apenas a propriedade especificada não afetando as demais caracaterísticas do objeto */
     transition-property: background-color, width;
     width: 200px;
     transition-duration: 1s;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.5);
 }
