@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto-Regular.ttf') format("truetype");
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    text-rendering: optimizelegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body{
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+header .welcome, .message, .datasData, .month-content{
+    display: flex;
+    align-items: center;
+}
+
+header .welcome{
+    /* padding: 5px; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;    
+    /* border: 1px solid red; */
+}
+
+header .welcome .message, .datasData{
+    flex: 1;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+header .welcome .message{
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 5px;
+    border: 1px solid;
+}
+
+
+.month-content{
+    width: 100%;
+    height: 100%;
+    /* padding: 5px; */
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.month-area, #atual-hours{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* border: 1px solid red;     */
+    border: 1px solid;
+}
+
+.month-area{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#day-week{
+    font-size: 24px;
+}
+.day-month{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* border: 1px solid red;     */
+
+}
+
+#atual-hours{
+    font-size: 36px;
+    font-weight: bold;
+}
