@@ -1,7 +1,12 @@
 let dayWeek = document.getElementById("week-day");
 
+// cards do footer
+let cardInfo = document.querySelectorAll(".card-info"); // main
+let atendTypes = document.querySelectorAll(".atend-type")
+
 let day = document.querySelector("#day");
 let month = document.querySelector("#month");
+let year = document.querySelector("#year");
 let periodo = document.querySelector("#periodo");
 let updateHours = document.querySelector("#update-hours");
 
@@ -11,6 +16,7 @@ let week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-
 
 let data = new Date();
 
+// configurando painel de datas
 setInterval(()=>{
     //declaranda a data no escopo do intervalo
     let data = new Date();
@@ -23,6 +29,9 @@ setInterval(()=>{
 
     // pegando mês
     month.textContent = months[data.getMonth()];
+
+    // pegando o ano
+    year.textContent = data.getFullYear()
 
     // verificando se é manhã ou tarde
     if(data.getHours() >= 5 && data.getHours() < 12){
@@ -37,3 +46,4 @@ setInterval(()=>{
     updateHours.textContent = data.toLocaleTimeString('pt-BR'); 
 
 }, 1000);
+

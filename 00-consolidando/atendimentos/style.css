@@ -22,12 +22,13 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #121214;
+    /* background-color: #121214; */
+    background: linear-gradient(to bottom right, #276242, #1682C2);
 }
 
 header{
     width: 100%;
-    height: 60px;
+    height: 10%;
     display: flex;
     /* border: 1px solid red; */
 }
@@ -43,8 +44,8 @@ header .welcome{
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;    
-    /* border: 1px solid red; */
+    gap: 10px;    
+    /* border: 1px solid red; */    
 }
 
 header .welcome .message, .datasData{
@@ -57,10 +58,11 @@ header .welcome .message{
     justify-content: center;
     font-size: 24px;
     font-weight: bold;
-    gap: 5px;
+    gap: 10px;
     /*border: 1px solid;*/
-    color:#757575;
-    background: #202024;
+    /* color:#757575; */
+    /* background: #202024; */
+    /* background: silver; */
     border-radius: 10px;
     box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
 }
@@ -70,7 +72,7 @@ header .welcome .message{
     width: 100%;
     height: 100%;
     /* padding: 5px; */
-    gap: 5px;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -83,8 +85,8 @@ header .welcome .message{
     /* border: 1px solid red;     */
     /*border: 1px solid;*/
     border-radius:10px;
-    color: #757575;
-    background: #202024;
+    /* color: #757575; */
+    /* background: #202024; */
     box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
 }
 
@@ -96,6 +98,7 @@ header .welcome .message{
 
 #day-week{
     font-size: 24px;
+    font-weight: bold;
 }
 .day-month{
     width: 100%;
@@ -107,6 +110,10 @@ header .welcome .message{
 
 }
 
+.day-month{
+    font-size: 18px;
+}
+
 #atual-hours{
     font-size: 36px;
     font-weight: bold;
@@ -114,6 +121,7 @@ header .welcome .message{
 
 main#main-content{
     width: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,24 +130,61 @@ main#main-content{
 
 main#main-content > div{
     flex: 1;
-    height: 450px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5px;
-    color: #757575;
-    background: #202024;
+    /* color: #757575; */
+    /* background: #202024; */
     border-radius:10px;
     box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
 
 }
 
+main#main-content #main-info #atendType{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+main#main-content #main-info #atendPass{
+    font-size: 150px;
+    color: #195B3B;
+    font-weight: bold;
+}
+
+main#main-content #main-info .atendTable{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+main#main-content #main-info .atendTable #table-number{
+    color: #F00;
+    font-size: 80px;
+}
+
+#other-infor{
+    overflow:auto;
+}
+
 footer#footer-content{
     width: 100%;
-    height: 200px;
-    background: #202024;
+    height: 30%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  
+}
+
+footer#footer-content .card-info{
+    width: 25%;
+    height: 100%;
+    /* background: #202024; */
     border-radius:10px;
     box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
-    /*border: 1px solid red;*/
+}
+
+.message, .month-area, #atual-hours, #main-info, #other-infor, .card-info{
+    background: silver;
 }
