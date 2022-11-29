@@ -1,8 +1,16 @@
+// importando modulos de changes
+// import domChanges from "./modules/dataCalcules.js";
+
 let dayWeek = document.getElementById("week-day");
 
 // cards do footer
-let cardInfo = document.querySelectorAll(".card-info"); // main
-let atendTypes = document.querySelectorAll(".atend-type")
+let cardsInfo = document.querySelectorAll(".card-info"); // main
+
+// tipo de atendimento
+let atendTypes = document.querySelectorAll(".atend-type");
+
+// número da senha
+let atendPass = document.querySelectorAll(".atend-pass");
 
 let day = document.querySelector("#day");
 let month = document.querySelector("#month");
@@ -14,6 +22,7 @@ let months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho
 
 let week = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 
+// definindo data principal
 let data = new Date();
 
 // configurando painel de datas
@@ -35,15 +44,40 @@ setInterval(()=>{
 
     // verificando se é manhã ou tarde
     if(data.getHours() >= 5 && data.getHours() < 12){
-        periodo.textContent = "Bom dia! ";
+        periodo.textContent = "Bom dia!";
     } else if(data.getHours() >= 12 && data.getHours() < 18){
-        periodo.textContent = "Boa tarde! "
+        periodo.textContent = "Boa tarde!"
     } else{
-        periodo.textContent = "Boa noite! "
+        periodo.textContent = "Boa noite!"
     }
 
     // rodando hora em tempo real
     updateHours.textContent = data.toLocaleTimeString('pt-BR'); 
-
 }, 1000);
 
+// TIPOS DE ATENDIMENTOS
+let tiposAtendimentos = ["PRIORIDADE", "CADÚNICO", "ZONA RURAL"]
+
+// SENHAS
+let priorityPas = []
+let cadPass = []
+let sibecPass = []
+let ruralPass = []
+
+for(let i = 1; i <= 600; i++){
+    if(i >= 1 && i <= 100){
+        cadPass.push(i);
+    }else if(i > 100 && i <= 200){
+        sibecPass.push(i);
+    }
+}
+
+cardsInfo.forEach(cardInfo => {
+    cardInfo.style = "display: flex; align-items: center; justify-content: center;"
+})
+
+tiposAtendimentos.forEach((tipoAtendimento, index) => {
+    atendTypes[index].textContent = tipoAtendimento;
+})
+
+console.log(sibecPass.length)
