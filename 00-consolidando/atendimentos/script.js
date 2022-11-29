@@ -29,6 +29,8 @@ setInterval(()=>{
         periodo.textContent = "Bom dia! ";
     } else if(data.getHours() >= 12 && data.getHours() < 18){
         periodo.textContent = "Boa tarde! "
+    } else{
+        periodo.textContent = "Boa noite! "
     }
 
     // rodando hora em tempo real
