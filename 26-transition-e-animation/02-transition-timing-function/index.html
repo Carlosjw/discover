@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transition Timing Functions</title>
     <style>
+        body{
+            background: #1D1D1D;
+        }
         .line {
             width: 100%;
             background-color: blue;
@@ -16,13 +19,85 @@
             transition-duration: 1s;
         }
 
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         body:hover .line{
             width: 20px;
             background-color: rgb(255, 0, 234);
         }
+
+        p{
+            color: silver;
+        }
+
+        /* Início mais rápido, meio mais lento e final mais lento */
+        .ease{
+            transition-timing-function: ease;
+            overflow: hidden;
+        }
+
+        /* Uma mesma velocidade do início ao fim */
+        .linear{
+            transition-timing-function: linear;
+            overflow: hidden;
+        }
+
+        /* Lento até a metade, depois fica mais rápida */
+        .ease-in {
+            transition-timing-function: ease-in;
+            overflow: hidden;
+        }
+
+        /* Rápida até a metade, depois fica mais lenta */
+        .ease-out {
+            transition-timing-function: ease-out;
+            overflow: hidden;
+        }
+
+        /* Extremidades rápidas e meio normal */
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+            overflow: hidden;
+        }
+
+        /* Tempo de progresso da animação */
+        .cube {
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
-    <div class="line"></div>
+    <div class="line ease">
+        EASE
+    </div>
+
+    <div class="line linear">
+        LINEAR
+    </div>
+
+    <div class="line ease-in">
+        EASE-IN
+    </div>
+
+    <div class="line ease-out">
+        EASE-OUT
+    </div>
+
+    <div class="line ease-in-out">
+        EASE-IN-OUT
+    </div>
+
+    <div class="line cube">
+        CUBE
+    </div>
+
+    <p>
+        Transition Timing Function é um tipo de animação que podemos usar no CSS.
+    </p>
 </body>
 </html>
