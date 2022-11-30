@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation direction</title>
+    <style>
+        body{
+            background: gray;
+        }
+
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: #f00;
+            position: relative;
+            box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5);
+
+            /* chamando a nimação */
+            animation-name: exemple-two; /* chama a animação */
+            animation-duration: 3s; /* duração da animação */
+            animation-delay: 2s; /* retarda o INÍCIO da animação */
+            animation-iteration-count: 4; 
+            /* 
+                animation-iteration-count: 
+                => Define quantas vezes a animação será executada;
+
+                OBS: Se definido como "infinite" executará a animação infinitamente.
+            
+            */
+
+            animation-direction: reverse; /* executa a animação ao contrário */
+            animation-direction: alternate-reverse; /* executa a animação tanto normal quanto ao contrário */
+        }
+
+        /* Com from ... to ... */
+        @keyframes exemple-one {
+            from{
+                background-color: blueviolet;
+            }
+
+            to {
+                background-color: rosybrown;
+            }
+        }
+
+        /* Com porcentagens */
+        @keyframes exemple-two {
+            0% {
+                background-color: blueviolet;
+                box-shadow: none;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                background-color: rosybrown;
+                box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5);
+                left: 600px;
+                top: 0;
+            }
+
+            50% {
+                background-color: blue;            
+                box-shadow: 8px 12px 30px rgba(0, 0, 0, 0.5);
+                left: 600px;
+                top: 600px;
+
+            }
+
+            75%{
+                background-color: orange;
+                box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5);
+                left: 0;
+                top: 600px;
+            }
+
+            100% {
+                background-color: yellow;
+                box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5);
+                left: 0;
+                top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

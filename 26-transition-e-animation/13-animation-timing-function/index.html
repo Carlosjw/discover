@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation timing function</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            background: gray;
+            gap: 5px;
+        }
+
+        div {
+            width: 100px;
+            height: 50px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+            position: relative; /* para trabahar com a posição dos elementos na tela */
+            box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
+
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+        }
+
+        .linear{
+            animation-timing-function: linear;
+        }
+
+        .ease {
+            animation-timing-function: ease;
+        }
+
+        .ease-in {
+            animation-timing-function: ease-in;
+        }
+
+        .ease-out {
+            animation-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes example{
+            from {
+                left: 0;
+            }
+
+            to {
+                left: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="linear">Linear</div>
+    <div class="ease">Ease</div>
+    <div class="ease-in">Ease-in</div>
+    <div class="ease-out">Ease-out</div>
+    <div class="ease-in-out">Ease-in-out</div>
+</body>
+</html>
