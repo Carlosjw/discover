@@ -14,14 +14,21 @@
             height: 100px;
             border-radius: 100%;
             background-color: blueviolet;
+            position: relative;
 
             animation-name: example;
             animation-duration: 2s;
+            animation-delay: 2s;
+
+            animation-fill-mode: forwards; /* mantém o objeto da animação na posição final da animação */
+            animation-fill-mode: backwards; /* define que o elemento terá, durante o delay, os elementos do início da animação (from) ativos */
+            animation-fill-mode: both; /* executa os efeitos do forwards e do backwards simultaneamente */
         }
 
         @keyframes example {
             from {
                 left: 0px;
+                background-color: orange;
             }
 
             to {
