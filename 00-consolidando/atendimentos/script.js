@@ -84,5 +84,10 @@ tiposAtendimentos.forEach((tipoAtendimento, index) => {
 
 console.log(sibecPass.length)
 
-let card = createCard("Prioridade", 084, `MESA ${05}`)
+let card = createCard("Prioridade", 084, "MESA 05")
 console.log(JSON.stringify(card))
+
+let newCard = document.createElement("div");
+newCard.innerHTML = JSON.stringify(card);
+
+document.body.appendChild(newCard)
