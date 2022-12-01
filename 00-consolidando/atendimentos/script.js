@@ -1,6 +1,8 @@
 // importando modulos de changes
 // import domChanges from "./modules/dataCalcules.js";
 
+import createCard from "./modules/card.js";
+
 let dayWeek = document.getElementById("week-day");
 
 // cards do footer
@@ -81,3 +83,6 @@ tiposAtendimentos.forEach((tipoAtendimento, index) => {
 })
 
 console.log(sibecPass.length)
+
+let card = createCard("Prioridade", 084, `MESA ${05}`)
+console.log(JSON.stringify(card))
